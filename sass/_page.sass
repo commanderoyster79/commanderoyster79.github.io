@@ -1,0 +1,165 @@
+img
+  display: block
+  width: 60px
+  height: 60px
+  margin: 10px 10px
+  transform: rotate(45deg)
+  opacity: 1
+:active, :hover, :focus 
+  outline: 0
+  outline-offset: 0
+.main
+    display: flex
+    justify-content: center
+    align-items: center
+    &_square
+      &_text_one
+        +main_text
+        opacity: 1
+        //text-decoration: underline
+        border-bottom: 2px solid white
+        &:after
+          content: ''
+          position: absolute 
+          bottom: 0
+          left: -17px
+          height: 0
+          width: 100px
+          background: black
+          transition: all linear 0.3s
+        &:hover
+          text-decoration: none
+          border-bottom: none
+          &:after
+            z-index: -1
+            width: 100px
+            height: 100%
+  
+      &_page
+        &_one
+          +main_page
+          background: linear-gradient(to right top, rgb(102,45,148), 65%,rgb(232,2,140), 75%, rgb(102,45,148))
+          +main_animation
+          &_black
+            transform: rotate(-90deg)
+            &:after
+              +after_black
+            &:hover
+              &:after
+                z-index: -1
+                width: 80px
+                height: 80px
+          &_small
+            +main_small
+        &_two
+          +main_page
+          background: linear-gradient(to top right, rgb(109,43,145), 65%,rgb(236,0,140),75%,rgb(109,43,145))
+          +main_animation
+          &_black
+            transform: rotate(-90deg)
+            &:after
+              +after_black
+            &:hover
+              &:after
+                z-index: -1
+                width: 80px
+                height: 80px
+          &_small
+            +main_small
+                
+        &_three
+          +main_page
+          background: linear-gradient(to top right, rgb(236,3,136), 65%,rgb(239,65,54),75%,rgb(236,3,136))
+          +main_animation
+          &_black
+            transform: rotate(-90deg)
+            &:after
+              +after_black
+            &:hover
+              &:after
+                
+                z-index: -1
+                width: 80px
+                height: 80px
+          &_small
+            +main_small
+        &_four
+          +main_page
+          background: linear-gradient(to right top, rgb(22,95,252), 65%, rgb(101,46,148),75%,rgb(22,95,252))
+          +main_animation
+          &_black
+            transform: rotate(-90deg)
+            &:after
+              +after_black
+            &:hover
+              &:after
+                
+                z-index: -1
+                width: 80px
+                height: 80px
+          &_small
+            +main_small
+        &_five
+          +main_page
+          background: linear-gradient(to right top, rgb(254,199,7), 65%,rgb(238,50,74),75%,rgb(254,199,7))
+          +main_animation
+          &_black
+            transform: rotate(-90deg)
+            &:after
+              +after_black
+            &:hover
+              &:after
+                z-index: -1
+                width: 80px
+                height: 80px
+          &_small
+            +main_small
+        &_six
+          +main_page
+          background: linear-gradient(to top right, rgb(247,148,65), 65%,rgb(239,226,0),75%,rgb(247,148,65))
+          +main_animation
+          &_black
+            transform: rotate(-90deg)
+            &:after
+              +after_black
+            &:hover
+              &:after
+                z-index: -1
+                width: 80px
+                height: 80px
+          &_small
+            +main_small
+        &_seven
+          +main_page
+          background: linear-gradient(to right top, rgb(48,182,249), 65%,rgb(22,95,252),75%,rgb(48,182,249))
+          +main_animation
+          &_black
+            transform: rotate(-90deg)
+            &:after
+              +after_black
+            &:hover
+              &:after
+                z-index: -1
+                width: 80px
+                height: 80px
+          &_small
+            +main_small
+        &_eight
+          +main_page
+          background: linear-gradient(to top right, rgb(48,182,249), 65%,rgb(57,181,74),75%,rgb(48,182,249))
+          +main_animation
+          &_black
+            transform: rotate(-90deg)
+            &:after
+              +after_black
+            &:hover
+              &:after
+                z-index: -1
+                width: 80px
+                height: 80px
+          &_small
+            +main_small
+
+
+      
+
