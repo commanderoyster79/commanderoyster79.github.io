@@ -144,7 +144,7 @@ img {
   width: 450px;
   border: 1px solid black;
   z-index: 2;
-  background: linear-gradient(to right top, #662d94, 65%, #e8028c, 75%, #662d94);
+  background: linear-gradient(to right top, #662d94, 60%, #e8028c, 90%, #662d94);
   background-size: 400% 400%;
   animation: move 10s linear infinite;
 }
@@ -187,7 +187,7 @@ img {
   width: 450px;
   border: 1px solid black;
   z-index: 2;
-  background: linear-gradient(to top right, #6d2b91, 65%, #ec008c, 75%, #6d2b91);
+  background: linear-gradient(to top right, #6d2b91, 60%, #ec008c, 90%, #6d2b91);
   background-size: 400% 400%;
   animation: move 10s linear infinite;
 }
@@ -230,7 +230,7 @@ img {
   width: 450px;
   border: 1px solid black;
   z-index: 2;
-  background: linear-gradient(to top right, #ec0388, 65%, #ef4136, 75%, #ec0388);
+  background: linear-gradient(to top right, #ec0388, 60%, #ef4136, 90%, #ec0388);
   background-size: 400% 400%;
   animation: move 10s linear infinite;
 }
@@ -273,7 +273,7 @@ img {
   width: 450px;
   border: 1px solid black;
   z-index: 2;
-  background: linear-gradient(to right top, #165ffc, 65%, #652e94, 75%, #165ffc);
+  background: linear-gradient(to right top, #165ffc, 60%, #652e94, 90%, #165ffc);
   background-size: 400% 400%;
   animation: move 10s linear infinite;
 }
@@ -316,7 +316,7 @@ img {
   width: 450px;
   border: 1px solid black;
   z-index: 2;
-  background: linear-gradient(to right top, #fec707, 65%, #ee324a, 75%, #fec707);
+  background: linear-gradient(to right top, #fec707, 60%, #ee324a, 90%, #fec707);
   background-size: 400% 400%;
   animation: move 10s linear infinite;
 }
@@ -359,7 +359,7 @@ img {
   width: 450px;
   border: 1px solid black;
   z-index: 2;
-  background: linear-gradient(to top right, #f79441, 65%, #efe200, 75%, #f79441);
+  background: linear-gradient(to top right, #f79441, 60%, #efe200, 90%, #f79441);
   background-size: 400% 400%;
   animation: move 10s linear infinite;
 }
@@ -402,7 +402,7 @@ img {
   width: 450px;
   border: 1px solid black;
   z-index: 2;
-  background: linear-gradient(to right top, #30b6f9, 65%, #165ffc, 75%, #30b6f9);
+  background: linear-gradient(to right top, #30b6f9, 60%, #165ffc, 90%, #30b6f9);
   background-size: 400% 400%;
   animation: move 10s linear infinite;
 }
