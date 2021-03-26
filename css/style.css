@@ -17,19 +17,19 @@ a {
   align-items: center;
 }
 .main_square {
-  transform: translateY(55%) rotate(45deg);
   height: 450px;
   width: 450px;
   border: 1px solid black;
+  transform: translateY(55%) rotate(-45deg);
 }
 .main_square_text {
   text-align: center;
   font-size: 30px;
   line-height: 40px;
   font-weight: 400;
-  transform: rotate(-45deg);
   color: white;
   text-transform: uppercase;
+  transform: rotate(45deg);
 }
 .main_square_small {
   display: flex;
@@ -112,9 +112,9 @@ img {
   font-size: 30px;
   line-height: 40px;
   font-weight: 400;
-  transform: rotate(-45deg);
   color: white;
   text-transform: uppercase;
+  transform: rotate(-45deg);
   opacity: 1;
   border-bottom: 2px solid white;
 }
@@ -126,7 +126,7 @@ img {
   height: 0;
   width: 100px;
   background: black;
-  transition: all linear 0.3s;
+  transition: all linear 0.2s;
 }
 .main_square_text_one:hover {
   text-decoration: none;
@@ -139,11 +139,11 @@ img {
 }
 .main_square_page_one {
   position: relative;
-  transform: translateY(55%) rotate(45deg);
   height: 450px;
   width: 450px;
   border: 1px solid black;
   z-index: 2;
+  transform: translateY(55%) rotate(45deg);
   background: linear-gradient(to right top, #662d94, 60%, #e8028c, 90%, #662d94);
   background-size: 400% 400%;
   animation: move 10s linear infinite;
@@ -159,7 +159,7 @@ img {
   height: 0;
   width: 0;
   background: black;
-  transition: all linear 0.3s;
+  transition: all linear 0.2s;
   transform: rotate(90deg);
 }
 .main_square_page_one_black:hover:after {
@@ -182,11 +182,11 @@ img {
 }
 .main_square_page_two {
   position: relative;
-  transform: translateY(55%) rotate(45deg);
   height: 450px;
   width: 450px;
   border: 1px solid black;
   z-index: 2;
+  transform: translateY(55%) rotate(45deg);
   background: linear-gradient(to top right, #6d2b91, 60%, #ec008c, 90%, #6d2b91);
   background-size: 400% 400%;
   animation: move 10s linear infinite;
@@ -202,7 +202,7 @@ img {
   height: 0;
   width: 0;
   background: black;
-  transition: all linear 0.3s;
+  transition: all linear 0.2s;
   transform: rotate(90deg);
 }
 .main_square_page_two_black:hover:after {
@@ -225,11 +225,11 @@ img {
 }
 .main_square_page_three {
   position: relative;
-  transform: translateY(55%) rotate(45deg);
   height: 450px;
   width: 450px;
   border: 1px solid black;
   z-index: 2;
+  transform: translateY(55%) rotate(45deg);
   background: linear-gradient(to top right, #ec0388, 60%, #ef4136, 90%, #ec0388);
   background-size: 400% 400%;
   animation: move 10s linear infinite;
@@ -245,7 +245,7 @@ img {
   height: 0;
   width: 0;
   background: black;
-  transition: all linear 0.3s;
+  transition: all linear 0.2s;
   transform: rotate(90deg);
 }
 .main_square_page_three_black:hover:after {
@@ -268,11 +268,11 @@ img {
 }
 .main_square_page_four {
   position: relative;
-  transform: translateY(55%) rotate(45deg);
   height: 450px;
   width: 450px;
   border: 1px solid black;
   z-index: 2;
+  transform: translateY(55%) rotate(45deg);
   background: linear-gradient(to right top, #165ffc, 60%, #652e94, 90%, #165ffc);
   background-size: 400% 400%;
   animation: move 10s linear infinite;
@@ -288,7 +288,7 @@ img {
   height: 0;
   width: 0;
   background: black;
-  transition: all linear 0.3s;
+  transition: all linear 0.2s;
   transform: rotate(90deg);
 }
 .main_square_page_four_black:hover:after {
@@ -311,11 +311,11 @@ img {
 }
 .main_square_page_five {
   position: relative;
-  transform: translateY(55%) rotate(45deg);
   height: 450px;
   width: 450px;
   border: 1px solid black;
   z-index: 2;
+  transform: translateY(55%) rotate(45deg);
   background: linear-gradient(to right top, #fec707, 60%, #ee324a, 90%, #fec707);
   background-size: 400% 400%;
   animation: move 10s linear infinite;
@@ -331,7 +331,7 @@ img {
   height: 0;
   width: 0;
   background: black;
-  transition: all linear 0.3s;
+  transition: all linear 0.2s;
   transform: rotate(90deg);
 }
 .main_square_page_five_black:hover:after {
@@ -354,11 +354,11 @@ img {
 }
 .main_square_page_six {
   position: relative;
-  transform: translateY(55%) rotate(45deg);
   height: 450px;
   width: 450px;
   border: 1px solid black;
   z-index: 2;
+  transform: translateY(55%) rotate(45deg);
   background: linear-gradient(to top right, #f79441, 60%, #efe200, 90%, #f79441);
   background-size: 400% 400%;
   animation: move 10s linear infinite;
@@ -374,7 +374,7 @@ img {
   height: 0;
   width: 0;
   background: black;
-  transition: all linear 0.3s;
+  transition: all linear 0.2s;
   transform: rotate(90deg);
 }
 .main_square_page_six_black:hover:after {
@@ -397,11 +397,11 @@ img {
 }
 .main_square_page_seven {
   position: relative;
-  transform: translateY(55%) rotate(45deg);
   height: 450px;
   width: 450px;
   border: 1px solid black;
   z-index: 2;
+  transform: translateY(55%) rotate(45deg);
   background: linear-gradient(to right top, #30b6f9, 60%, #165ffc, 90%, #30b6f9);
   background-size: 400% 400%;
   animation: move 10s linear infinite;
@@ -417,7 +417,7 @@ img {
   height: 0;
   width: 0;
   background: black;
-  transition: all linear 0.3s;
+  transition: all linear 0.2s;
   transform: rotate(90deg);
 }
 .main_square_page_seven_black:hover:after {
@@ -440,11 +440,11 @@ img {
 }
 .main_square_page_eight {
   position: relative;
-  transform: translateY(55%) rotate(45deg);
   height: 450px;
   width: 450px;
   border: 1px solid black;
   z-index: 2;
+  transform: translateY(55%) rotate(45deg);
   background: linear-gradient(to top right, #30b6f9, 60%, #39b54a, 90%, #30b6f9);
   background-size: 400% 400%;
   animation: move 10s linear infinite;
@@ -460,7 +460,7 @@ img {
   height: 0;
   width: 0;
   background: black;
-  transition: all linear 0.3s;
+  transition: all linear 0.2s;
   transform: rotate(90deg);
 }
 .main_square_page_eight_black:hover:after {

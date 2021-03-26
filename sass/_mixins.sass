@@ -2,7 +2,6 @@
     background-color: black
     border-image-slice: 1
 =main_square
-    transform: translateY(55%) rotate(45deg)
     height: 450px
     width: 450px
     border: 1px solid black
@@ -11,13 +10,13 @@
     font-size: 30px
     line-height: 40px
     font-weight: 400
-    transform: rotate(-45deg)
     color: white
     text-transform: uppercase
 =main_page
     position: relative
     +main_square
     z-index: 2
+    transform: $page_transform
 =main_small
     position: relative
     display: flex
@@ -38,7 +37,7 @@
     height: 0
     width: 0
     background: black
-    transition: all linear 0.3s
+    transition: all linear 0.2s
     transform: rotate(90deg)
 =main_animation
     background-size: 400% 400%
