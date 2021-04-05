@@ -12,11 +12,12 @@
     font-weight: 400
     color: white
     text-transform: uppercase
+    transform: rotate(45deg)
 =main_page
     position: relative
     +main_square
     z-index: 2
-    transform: $page_transform
+    transform: $main_transform
 =main_small
     position: relative
     display: flex
@@ -32,7 +33,7 @@
 =after_black
     content: ''
     position: absolute 
-    bottom: 0
+    top: 0
     left: 0
     height: 0
     width: 0

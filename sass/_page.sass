@@ -3,7 +3,7 @@ img
   width: 60px
   height: 60px
   margin: 10px 10px
-  transform: rotate(45deg)
+  transform: rotate(135deg)
   opacity: 1
 :active, :hover, :focus 
   outline: 0
@@ -13,12 +13,14 @@ img
     justify-content: center
     align-items: center
     &_square
+      &_line_one
+        position: absolute 
+        width: 80px
+        height: 4px
+        background: white
+        transform: rotate(45deg) translateY(20px)
       &_text_one
         +main_text
-        transform: $page_text_transform
-        opacity: 1
-        //text-decoration: underline
-        border-bottom: 2px solid white
         &:after
           content: ''
           position: absolute 
@@ -29,8 +31,6 @@ img
           background: black
           transition: all linear 0.2s
         &:hover
-          text-decoration: none
-          border-bottom: none
           &:after
             z-index: -1
             width: 100px
@@ -39,7 +39,7 @@ img
       &_page
         &_one
           +main_page
-          background: linear-gradient(to right top, rgb(102,45,148), 60%,rgb(232,2,140), 90%, rgb(102,45,148))
+          background: linear-gradient(to top left, rgb(102,45,148), 60%,rgb(232,2,140), 90%, rgb(102,45,148))
           +main_animation
           &_black
             transform: rotate(-90deg)
@@ -54,7 +54,7 @@ img
             +main_small
         &_two
           +main_page
-          background: linear-gradient(to top right, rgb(109,43,145), 60%,rgb(236,0,140),90%,rgb(109,43,145))
+          background: linear-gradient(to top left, rgb(109,43,145), 60%,rgb(236,0,140),90%,rgb(109,43,145))
           +main_animation
           &_black
             transform: rotate(-90deg)
@@ -70,7 +70,7 @@ img
                 
         &_three
           +main_page
-          background: linear-gradient(to top right, rgb(236,3,136), 60%,rgb(239,65,54),90%,rgb(236,3,136))
+          background: linear-gradient(to top left, rgb(236,3,136), 60%,rgb(239,65,54),90%,rgb(236,3,136))
           +main_animation
           &_black
             transform: rotate(-90deg)
@@ -85,7 +85,7 @@ img
             +main_small
         &_four
           +main_page
-          background: linear-gradient(to right top, rgb(22,95,252), 60%, rgb(101,46,148),90%,rgb(22,95,252))
+          background: linear-gradient(to top left, rgb(22,95,252), 60%, rgb(101,46,148),90%,rgb(22,95,252))
           +main_animation
           &_black
             transform: rotate(-90deg)
@@ -100,7 +100,7 @@ img
             +main_small
         &_five
           +main_page
-          background: linear-gradient(to right top, rgb(254,199,7), 60%,rgb(238,50,74),90%,rgb(254,199,7))
+          background: linear-gradient(to top left, rgb(254,199,7), 60%,rgb(238,50,74),90%,rgb(254,199,7))
           +main_animation
           &_black
             transform: rotate(-90deg)
@@ -115,7 +115,7 @@ img
             +main_small
         &_six
           +main_page
-          background: linear-gradient(to top right, rgb(247,148,65), 60%,rgb(239,226,0),90%,rgb(247,148,65))
+          background: linear-gradient(to top left, rgb(247,148,65), 60%,rgb(239,226,0),90%,rgb(247,148,65))
           +main_animation
           &_black
             transform: rotate(-90deg)
@@ -130,7 +130,7 @@ img
             +main_small
         &_seven
           +main_page
-          background: linear-gradient(to right top, rgb(48,182,249), 60%,rgb(22,95,252),90%,rgb(48,182,249))
+          background: linear-gradient(to top left, rgb(48,182,249), 60%,rgb(22,95,252),90%,rgb(48,182,249))
           +main_animation
           &_black
             transform: rotate(-90deg)
@@ -145,7 +145,7 @@ img
             +main_small
         &_eight
           +main_page
-          background: linear-gradient(to top right, rgb(48,182,249), 60%,rgb(57,181,74),90%,rgb(48,182,249))
+          background: linear-gradient(to top left, rgb(48,182,249), 60%,rgb(57,181,74),90%,rgb(48,182,249))
           +main_animation
           &_black
             transform: rotate(-90deg)

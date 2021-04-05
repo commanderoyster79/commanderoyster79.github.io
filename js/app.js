@@ -30,10 +30,3 @@ barba.init({
     }
   }]
 });
-
-
-      //   
-    //    const done = this.async();
-    //    setTimeout(function(){
-    //        done();
-    //    },700)
