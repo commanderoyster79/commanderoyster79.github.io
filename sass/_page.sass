@@ -14,17 +14,48 @@ img
     align-items: center
     &_square
       &_line_one
-        opacity: 1
-        position: absolute 
+        +page_line
         width: 80px
-        height: 4px
-        background: white
-        transform: rotate(45deg) translateY(20px)
-        transition: all linear 0.2s
       &_text_one
         +main_text
         &:after
           +after_text
+      &_line_two
+        +page_line
+        transform: rotate(45deg) translateY(30px)
+        width: 115px
+      &_text_two
+        +main_text
+        font-size: 20px
+        line-height: 25px
+        &:after
+          +after_text
+          left: 0
+          width: 143px
+      &_line_three
+        +page_line
+        transform: rotate(45deg) translateY(30px)
+        width: 115px
+      &_text_three
+        +main_text
+        font-size: 20px
+        line-height: 25px
+        &:after
+          +after_text
+          left: 0
+          width: 143px
+      &_line_four
+        +page_line
+        transform: rotate(45deg) translateY(30px)
+        width: 115px
+      &_text_four
+        +main_text
+        font-size: 20px
+        line-height: 25px
+        &:after
+          +after_text
+          left: 0
+          width: 143px
       &_page
         &_one
           +main_page
@@ -36,7 +67,27 @@ img
               +after_black
           &_small
             +main_small
-            &_1
+            &_2
+              &:hover
+                .main_square_text_one
+                  &:after
+                    z-index: -1
+                    width: 100px
+                    height: 100%
+                .main_square_line_one
+                  opacity: 0
+                  width: 0px
+            &_3
+              &:hover
+                .main_square_text_one
+                  &:after
+                    z-index: -1
+                    width: 100px
+                    height: 100%
+                .main_square_line_one
+                  opacity: 0
+                  width: 0px
+            &_4
               &:hover
                 .main_square_text_one
                   &:after
@@ -68,6 +119,16 @@ img
                 height: 80px
           &_small
             +main_small
+            &_1
+              &:hover
+                .main_square_text_two
+                  &:after
+                    z-index: -1
+                    //width: 110px
+                    height: 100%
+                .main_square_line_two
+                  opacity: 0
+                  width: 0px
                 
         &_three
           +main_page
@@ -84,6 +145,17 @@ img
                 height: 80px
           &_small
             +main_small
+            &_1
+              &:hover
+                .main_square_text_three
+                  &:after
+                    z-index: -1
+                    //width: 110px
+                    height: 100%
+                .main_square_line_three
+                  opacity: 0
+                  width: 0px
+          
         &_four
           +main_page
           background: linear-gradient(to top left, rgb(22,95,252), 60%, rgb(101,46,148),90%,rgb(22,95,252))
@@ -99,6 +171,36 @@ img
                 height: 80px
           &_small
             +main_small
+            &_1
+              &:hover
+                .main_square_text_four
+                  &:after
+                    z-index: -1
+                    //width: 110px
+                    height: 100%
+                .main_square_line_four
+                  opacity: 0
+                  width: 0px
+            &_2
+              &:hover
+                .main_square_text_four
+                  &:after
+                    z-index: -1
+                    //width: 110px
+                    height: 100%
+                .main_square_line_four
+                  opacity: 0
+                  width: 0px
+            &_5
+              &:hover
+                .main_square_text_four
+                  &:after
+                    z-index: -1
+                    //width: 110px
+                    height: 100%
+                .main_square_line_four
+                  opacity: 0
+                  width: 0px
         &_five
           +main_page
           background: linear-gradient(to top left, rgb(254,199,7), 60%,rgb(238,50,74),90%,rgb(254,199,7))
