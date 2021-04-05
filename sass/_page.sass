@@ -14,28 +14,17 @@ img
     align-items: center
     &_square
       &_line_one
+        opacity: 1
         position: absolute 
         width: 80px
         height: 4px
         background: white
         transform: rotate(45deg) translateY(20px)
+        transition: all linear 0.2s
       &_text_one
         +main_text
         &:after
-          content: ''
-          position: absolute 
-          bottom: 0
-          left: -17px
-          height: 0
-          width: 100px
-          background: black
-          transition: all linear 0.2s
-        &:hover
-          &:after
-            z-index: -1
-            width: 100px
-            height: 100%
-  
+          +after_text
       &_page
         &_one
           +main_page
@@ -45,13 +34,25 @@ img
             transform: rotate(-90deg)
             &:after
               +after_black
-            &:hover
-              &:after
-                z-index: -1
-                width: 80px
-                height: 80px
           &_small
             +main_small
+            &_1
+              &:hover
+                .main_square_text_one
+                  &:after
+                    z-index: -1
+                    width: 100px
+                    height: 100%
+                .main_square_line_one
+                  opacity: 0
+                  width: 0px
+            &_9
+              &:hover
+                .main_square_page_one_black
+                  &:after
+                    z-index: -1
+                    width: 80px
+                    height: 80px
         &_two
           +main_page
           background: linear-gradient(to top left, rgb(109,43,145), 60%,rgb(236,0,140),90%,rgb(109,43,145))
