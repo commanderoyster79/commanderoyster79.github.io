@@ -110,7 +110,7 @@ img {
 .main_square_line_one {
   opacity: 1;
   position: absolute;
-  height: 4px;
+  height: 3px;
   background: white;
   transform: rotate(45deg) translateY(20px);
   transition: all linear 0.2s;
@@ -138,7 +138,7 @@ img {
 .main_square_line_two {
   opacity: 1;
   position: absolute;
-  height: 4px;
+  height: 3px;
   background: white;
   transform: rotate(45deg) translateY(20px);
   transition: all linear 0.2s;
@@ -171,7 +171,7 @@ img {
 .main_square_line_three {
   opacity: 1;
   position: absolute;
-  height: 4px;
+  height: 3px;
   background: white;
   transform: rotate(45deg) translateY(20px);
   transition: all linear 0.2s;
@@ -204,12 +204,15 @@ img {
 .main_square_line_four {
   opacity: 1;
   position: absolute;
-  height: 4px;
+  height: 3px;
   background: white;
   transform: rotate(45deg) translateY(20px);
   transition: all linear 0.2s;
   transform: rotate(45deg) translateY(30px);
   width: 115px;
+}
+.main_square_line_four_1 {
+  width: 80px;
 }
 .main_square_text_four {
   text-align: center;
@@ -221,6 +224,7 @@ img {
   transform: rotate(45deg);
   font-size: 20px;
   line-height: 25px;
+  white-space: nowrap;
 }
 .main_square_text_four:after {
   content: "";
@@ -233,6 +237,18 @@ img {
   transition: all linear 0.2s;
   left: 0;
   width: 143px;
+}
+.main_square_text_four_1:after {
+  left: -17px;
+  width: 100px;
+}
+.main_square_text_four_2:after {
+  left: -2px;
+  width: 157px;
+}
+.main_square_text_four_5:after {
+  left: -10px;
+  width: 147px;
 }
 .main_square_page_one {
   position: relative;

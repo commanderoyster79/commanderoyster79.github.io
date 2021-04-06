@@ -48,14 +48,29 @@ img
         +page_line
         transform: rotate(45deg) translateY(30px)
         width: 115px
+        &_1
+          width: 80px
       &_text_four
         +main_text
         font-size: 20px
         line-height: 25px
+        white-space: nowrap
         &:after
           +after_text
           left: 0
           width: 143px
+        &_1
+          &:after
+            left: -17px
+            width: 100px
+        &_2
+          &:after
+            left: -2px
+            width: 157px
+        &_5
+          &:after
+            left: -10px
+            width: 147px
       &_page
         &_one
           +main_page
