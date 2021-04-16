@@ -1,0 +1,64 @@
+=gradient_hover
+    background-color: black
+    border-image-slice: 1
+=main_square
+    height: 450px
+    width: 450px
+    border: 1px solid black
+=main_text
+    text-align: center
+    font-size: 25px
+    line-height: 25px
+    font-weight: 400
+    color: white
+    text-transform: uppercase
+    transform: rotate(45deg)
+    white-space: nowrap
+=main_page
+    position: relative
+    +main_square
+    z-index: 2
+    transform: $main_transform
+=main_small
+    //position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 1
+    border: 4px solid black
+    outline: 3.5px solid black
+    outline-offset: -3.5px
+    background-clip: padding-box
+    width: 150px
+    height: 150px
+=after_black
+    content: ''
+    position: absolute 
+    top: 5px
+    left: 5px
+    height: 0
+    width: 0
+    background: black
+    transition: all linear 0.2s
+    transform: rotate(90deg)
+=after_text
+    content: ''
+    position: absolute 
+    bottom: 0
+    left: -17px
+    height: 0
+    width: 100px
+    background: black
+    transition: all linear 0.2s
+=page_line
+    opacity: 1
+    position: absolute 
+    height: 3px
+    background: white
+    transform: rotate(45deg) translateY(20px)
+    transition: all linear 0.2s
+=main_animation
+    background-size: 400% 400%
+    animation: move 10s linear infinite
+
+    

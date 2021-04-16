@@ -1,0 +1,467 @@
+*
+  &:active, &:hover, &:focus 
+  outline: 0
+  outline-offset: 0
+img
+  display: block
+  width: 70px
+  height: 70px
+  margin: 10px 10px
+  transform: rotate(135deg)
+  opacity: 1
+.main
+    display: flex
+    justify-content: center
+    align-items: center
+    &_square
+      &_line_one
+        +page_line
+        width: 66px
+      &_text_one
+        +main_text
+        font-size: 30px
+        &:after
+          +after_text
+          bottom: -5px
+          left: -7px
+          width: 80px
+      &_line_two
+        +page_line
+        transform: rotate(45deg) translateY(20px)
+        width: 96px
+      &_text_two
+        +main_text
+        &:after
+          +after_text
+          bottom: -5px
+          left: -8px
+          width: 115px
+      &_line_three
+        +page_line
+        transform: rotate(45deg) translateY(31px)
+        width: 75px
+      &_text_three
+        +main_text
+        &:after
+          +after_text
+          bottom: -5px
+          left: -7px
+          width: 90px
+      &_line_four
+        +page_line
+        transform: rotate(45deg) translateY(20px)
+        width: 53px
+        &_2
+          width: 82px
+          transform: rotate(45deg) translateY(33px)
+          margin-left: 7px
+        &_5
+          width: 95px
+          transform: rotate(45deg) translateY(33px)
+          margin-left: 5px
+      &_text_four
+        +main_text
+        &_2_1
+          transform: rotate(0deg)
+          margin-left: 5px
+        &_5_2
+          transform: rotate(0deg)
+          margin-left: 5px
+        &:after
+          +after_text
+          left: 0
+          width: 143px
+        &_1
+          &:after
+            bottom: -5px
+            left: -6px
+            width: 65px
+        &_2_1
+          &:after
+            left: 6px
+            width: 100px
+            bottom: -4px
+        &_2_2
+          &:after
+            left: -2px
+            width: 125px
+            bottom: 25px
+        &_5_1
+          &:after
+            left: 21px
+            width: 65px
+            bottom: 24px
+        &_5_2
+          &:after
+            left: -8px
+            width: 115px
+            bottom: -5px
+      &_line_five
+        +page_line
+        transform: rotate(45deg) translateY(20px)
+        width: 115px
+        &_1
+          width: 78px
+        &_2
+          width: 100px
+      &_text_five
+        +main_text
+        &:after
+          +after_text
+          left: 0
+          width: 143px
+        &_1
+          &:after
+            bottom: -5px
+            left: -6px
+            width: 90px
+        &_2
+          &:after
+            bottom: -5px
+            left: -6px
+            width: 110px
+      &_line_six
+        +page_line
+        transform: rotate(45deg) translateY(20px)
+        width: 131px
+      &_text_six
+        +main_text
+        &:after
+          +after_text
+          bottom: -5px
+          left: -6px
+          width: 145px
+      &_line_seven
+        +page_line
+        transform: rotate(45deg) translateY(32px)
+        width: 120px
+      &_text_seven
+        +main_text
+        &_1_2
+          transform: rotate(0deg)
+          margin-left: 3px
+        &:after
+          +after_text
+        &_1_1
+          &:after
+            left: 12px
+            width: 100px
+            bottom: 22px
+        &_1_2
+          &:after
+            left: -8px
+            width: 135px
+            bottom: -5px
+      &_line_eight
+        +page_line
+        transform: rotate(45deg) translateY(31px)
+        &_1
+          width: 75px
+        &_2
+          width: 117px
+      &_text_eight
+        +main_text
+        &_2_2
+          transform: rotate(0deg)
+        &:after
+          +after_text
+          left: -11px
+          width: 110px
+        &_1
+          &:after
+            bottom: -5px
+            left: -7px
+            width: 90px
+        &_2_1
+          &:after
+            left: 5px
+            width: 110px
+            bottom: 23px
+        &_2_2
+          &:after
+            left: -9px
+            width: 140px
+            bottom: -5px
+      &_page
+        &_one
+          +main_page
+          background: linear-gradient(to top left, rgb(102,45,148), 60%,rgb(232,2,140), 90%, rgb(102,45,148))
+          +main_animation
+          &_black
+            transform: rotate(-90deg)
+            &:after
+              +after_black
+          &_small
+            +main_small
+            &_2
+              &:hover
+                .main_square_text_one
+                  &:after
+                    z-index: -1
+                    //width: 100px
+                    height: 35px
+                .main_square_line_one
+                  opacity: 0
+                  width: 0px
+            &_3
+              &:hover
+                .main_square_text_one
+                  &:after
+                    z-index: -1
+                    //width: 100px
+                    height: 35px
+                .main_square_line_one
+                  opacity: 0
+                  width: 0px
+            &_4
+              &:hover
+                .main_square_text_one
+                  &:after
+                    z-index: -1
+                    //width: 100px
+                    height: 35px
+                .main_square_line_one
+                  opacity: 0
+                  width: 0px
+            &_9
+              &:hover
+                .main_square_page_one_black
+                  &:after
+                    z-index: -1
+                    width: 80px
+                    height: 80px
+        &_two
+          +main_page
+          background: linear-gradient(to top left, rgb(109,43,145), 60%,rgb(236,0,140),90%,rgb(109,43,145))
+          +main_animation
+          &_black
+            transform: rotate(-90deg)
+            &:after
+              +after_black
+          &_small
+            +main_small
+            &_1
+              &:hover
+                .main_square_text_two
+                  &:after
+                    z-index: -1
+                    //width: 110px
+                    height: 35px
+                .main_square_line_two
+                  opacity: 0
+                  width: 0px
+            &_9
+              &:hover
+                .main_square_page_two_black
+                  &:after
+                    z-index: -1
+                    width: 80px
+                    height: 80px
+                
+        &_three
+          +main_page
+          background: linear-gradient(to top left, rgb(236,3,136), 60%,rgb(239,65,54),90%,rgb(236,3,136))
+          +main_animation
+          &_black
+            transform: rotate(-90deg)
+            &:after
+              +after_black
+          &_small
+            +main_small
+            &_1
+              &:hover
+                .main_square_text_three
+                  &:after
+                    z-index: -1
+                    //width: 110px
+                    height: 60px
+                .main_square_line_three
+                  opacity: 0
+                  width: 0px
+            &_9
+              &:hover
+                .main_square_page_three_black
+                  &:after
+                    z-index: -1
+                    width: 80px
+                    height: 80px
+          
+        &_four
+          +main_page
+          background: linear-gradient(to top left, rgb(22,95,252), 60%, rgb(101,46,148),90%,rgb(22,95,252))
+          +main_animation
+          &_black
+            transform: rotate(-90deg)
+            &:after
+              +after_black
+          &_small
+            +main_small
+            &_1
+              &:hover
+                .main_square_text_four
+                  &:after
+                    z-index: -1
+                    //width: 110px
+                    height: 35px
+                .main_square_line_four
+                  opacity: 0
+                  width: 0px
+            &_2
+              &:hover
+                .main_square_text_four
+                  &:after
+                    z-index: -1
+                    //width: 110px
+                    height: 30px
+                .main_square_line_four
+                  opacity: 0
+                  width: 0px
+            &_5
+              &:hover
+                .main_square_text_four
+                  &:after
+                    z-index: -1
+                    //width: 110px
+                    height: 30px
+                .main_square_line_four
+                  opacity: 0
+                  width: 0px
+            &_9
+              &:hover
+                .main_square_page_four_black
+                  &:after
+                    z-index: -1
+                    width: 80px
+                    height: 80px
+        &_five
+          +main_page
+          background: linear-gradient(to top left, rgb(254,199,7), 60%,rgb(238,50,74),90%,rgb(254,199,7))
+          +main_animation
+          &_black
+            transform: rotate(-90deg)
+            &:after
+              +after_black
+          &_small
+            +main_small
+            &_1
+              &:hover
+                .main_square_text_five
+                  &:after
+                    z-index: -1
+                    //width: 110px
+                    height: 35px
+                .main_square_line_five
+                  opacity: 0
+                  width: 0px
+            &_2
+              &:hover
+                .main_square_text_five
+                  &:after
+                    z-index: -1
+                    //width: 110px
+                    height: 35px
+                .main_square_line_five
+                  opacity: 0
+                  width: 0px
+            &_9
+              &:hover
+                .main_square_page_five_black
+                  &:after
+                    z-index: -1
+                    width: 80px
+                    height: 80px
+        &_six
+          +main_page
+          background: linear-gradient(to top left, rgb(247,148,65), 60%,rgb(239,226,0),90%,rgb(247,148,65))
+          +main_animation
+          &_black
+            transform: rotate(-90deg)
+            &:after
+              +after_black
+          &_small
+            +main_small
+            &_1
+              &:hover
+                .main_square_text_six
+                  &:after
+                    z-index: -1
+                    //width: 110px
+                    height: 35px
+                .main_square_line_six
+                  opacity: 0
+                  width: 0px
+            &_9
+              &:hover
+                .main_square_page_six_black
+                  &:after
+                    z-index: -1
+                    width: 80px
+                    height: 80px
+        &_seven
+          +main_page
+          background: linear-gradient(to top left, rgb(48,182,249), 60%,rgb(22,95,252),90%,rgb(48,182,249))
+          +main_animation
+          &_black
+            transform: rotate(-90deg)
+            &:after
+              +after_black
+          &_small
+            +main_small
+            &_1
+              &:hover
+                .main_square_text_seven
+                  &:after
+                    z-index: -1
+                    //width: 110px
+                    height: 33px
+                .main_square_line_seven
+                  opacity: 0
+                  width: 0px
+            &_9
+              &:hover
+                .main_square_page_seven_black
+                  &:after
+                    z-index: -1
+                    width: 80px
+                    height: 80px
+        &_eight
+          +main_page
+          background: linear-gradient(to top left, rgb(48,182,249), 60%,rgb(57,181,74),90%,rgb(48,182,249))
+          +main_animation
+          &_black
+            transform: rotate(-90deg)
+            &:after
+              +after_black
+          &_small
+            +main_small
+            &_1
+              &:hover
+                .main_square_text_eight
+                  &:after
+                    z-index: -1
+                    //width: 110px
+                    height: 60px
+                .main_square_line_eight
+                  opacity: 0
+                  width: 0px
+            &_2
+              &:hover
+                .main_square_text_eight
+                  &:after
+                    z-index: -1
+                    //width: 110px
+                    height: 33px
+                .main_square_line_eight
+                  opacity: 0
+                  width: 0px
+            &_9
+              &:hover
+                .main_square_page_eight_black
+                  &:after
+                    z-index: -1
+                    width: 80px
+                    height: 80px
+
+
+      
+
