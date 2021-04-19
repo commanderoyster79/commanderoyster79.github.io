@@ -42,11 +42,23 @@ img
         width: 75px
       &_text_three
         +main_text
+        &_1_2
+          transform: rotate(0deg)
         &:after
           +after_text
           bottom: -5px
           left: -7px
           width: 90px
+        &_1_1
+          &:after
+            left: -8px
+            width: 90px
+            bottom: 24px
+        &_1_2
+          &:after
+            left: -8px
+            width: 90px
+            bottom: -4px
       &_line_four
         +page_line
         transform: rotate(45deg) translateY(20px)
@@ -134,7 +146,8 @@ img
       &_line_seven
         +page_line
         transform: rotate(45deg) translateY(32px)
-        width: 120px
+        width: 118px
+        margin-left: 6px
       &_text_seven
         +main_text
         &_1_2
@@ -161,17 +174,24 @@ img
           width: 117px
       &_text_eight
         +main_text
+        &_1_2
+          transform: rotate(0deg)
         &_2_2
           transform: rotate(0deg)
         &:after
           +after_text
           left: -11px
           width: 110px
-        &_1
+        &_1_1
           &:after
-            bottom: -5px
-            left: -7px
+            left: -8px
             width: 90px
+            bottom: 24px
+        &_1_2
+          &:after
+            left: -8px
+            width: 90px
+            bottom: -4px
         &_2_1
           &:after
             left: 5px
@@ -274,7 +294,7 @@ img
                   &:after
                     z-index: -1
                     //width: 110px
-                    height: 60px
+                    height: 30px
                 .main_square_line_three
                   opacity: 0
                   width: 0px
@@ -440,7 +460,7 @@ img
                   &:after
                     z-index: -1
                     //width: 110px
-                    height: 60px
+                    height: 30px
                 .main_square_line_eight
                   opacity: 0
                   width: 0px
