@@ -58,3 +58,130 @@ a
               &:hover
                 border-image: linear-gradient(to top right, rgb(58,182,73), 70%,rgb(250,204,6))
                 +gradient_hover
+.header
+  display: flex
+  position: absolute
+  width: 40px
+  height: 40px
+  top: 50px
+  right: 110px
+  &:hover
+      .header_descr
+        opacity: 1
+  &_block
+    display: flex
+    justify-content: center
+    align-items: center
+  &_square
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 41px
+    height: 41px
+    background-color: white
+    transform: rotate(45deg)
+    margin-right: 20px
+  &_descr
+    margin-right: 20px
+    color: white
+    opacity: 0
+  &_line
+    position: absolute
+    background-color: black
+    &_1
+      width: 42px
+      height: 2px
+      right: 7px
+      transform: rotate(90deg)
+    &_2
+      width: 42px
+      height: 2px
+      left: 6px
+      transform: rotate(90deg)
+    &_3
+      width: 42px
+      height: 2px
+      bottom: 13px
+      transform: rotate(180deg)
+    &_4
+      width: 42px
+      height: 2px
+      top: 12px
+      transform: rotate(180deg)
+.logo
+  display: flex
+  position: absolute
+  width: 40px
+  height: 40px
+  top: 50px
+  left: 50px
+  &:hover
+      .logo_descr
+        opacity: 1
+  &_descr
+    color: white
+    line-height: 20px
+    opacity: 0
+  &_block
+    display: flex
+    justify-content: center
+    align-items: center
+  &_square
+    display: flex
+    justify-content: center
+    align-items: center
+    +white_block
+    margin-right: 20px
+  &_line
+    position: absolute
+    width: 50px
+    height: 3px
+    background-color: black
+    &_1
+      transform: rotate(90deg)
+      left: -20px
+    &_2
+      transform: rotate(90deg)
+      left: 9px
+    &_3
+      transform: rotate(47deg)
+      left: -2px
+      top: 23px
+.social
+  position: absolute
+  width: 140px
+  display: flex
+  //justify-content: space-between
+  align-items: center
+  margin-left: 48px
+  margin-top: 40px
+  &:hover
+      .social_descr
+        opacity: 1
+  &_1
+    top: 560px
+  &_2
+    top: 640px
+  &_3
+    top: 720px
+  &_item
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 41px
+    height: 41px
+    background-color: white
+    transform: rotate(45deg)
+    i
+      transform: rotate(-45deg)
+      color: black
+      font-size: 1.73333em
+      margin-left: -1px
+  &_descr
+    margin-left: 20px
+    color: white
+    opacity: 0
+    
+
+    
+  
