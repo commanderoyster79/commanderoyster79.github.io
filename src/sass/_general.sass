@@ -64,10 +64,7 @@ a
   width: 40px
   height: 40px
   top: 50px
-  right: 110px
-  &:hover
-      .header_descr
-        opacity: 1
+  right: 50px
   &_block
     display: flex
     justify-content: center
@@ -76,16 +73,20 @@ a
     display: flex
     justify-content: center
     align-items: center
-    width: 41px
-    height: 41px
-    background-color: white
-    transform: rotate(45deg)
+    +white_block
     margin-right: 20px
+    &:hover
+      .header_descr
+        opacity: 1
   &_descr
-    margin-right: 20px
+    position: absolute
+    top: 50px
+    right: 42px
     color: white
     opacity: 0
     transition: all linear 0.2s
+    pointer-events: none
+    transform: rotate(-45deg)
   &_line
     position: absolute
     background-color: black
@@ -116,14 +117,16 @@ a
   height: 40px
   top: 50px
   left: 50px
-  &:hover
-      .logo_descr
-        opacity: 1
   &_descr
     color: white
     line-height: 20px
     opacity: 0
     transition: all linear 0.2s
+    pointer-events: none
+    position: absolute
+    top: -55px
+    left: 35px
+    transform: rotate(-45deg)
   &_block
     display: flex
     justify-content: center
@@ -134,32 +137,32 @@ a
     align-items: center
     +white_block
     margin-right: 20px
+    &:hover
+      .logo_descr
+        opacity: 1
   &_line
     position: absolute
     width: 50px
     height: 3px
     background-color: black
     &_1
-      transform: rotate(90deg)
-      left: -20px
+      transform: rotate(180deg)
+      left: -7px
     &_2
-      transform: rotate(90deg)
-      left: 9px
+      transform: rotate(45deg)
+      left: 1px
+      top: 3px
     &_3
-      transform: rotate(47deg)
-      left: -2px
-      top: 23px
+      transform: rotate(45deg)
+      left: -20px
+      top: 26px
 .social
   position: absolute
   width: 140px
   display: flex
-  //justify-content: space-between
   align-items: center
-  margin-left: 48px
+  margin-left: 50px
   margin-top: 40px
-  &:hover
-      .social_descr
-        opacity: 1
   &_1
     bottom: 220px
   &_2
@@ -167,23 +170,28 @@ a
   &_3
     bottom: 60px
   &_item
-    display: flex
-    justify-content: center
-    align-items: center
-    width: 41px
-    height: 41px
-    background-color: white
-    transform: rotate(45deg)
-    i
-      transform: rotate(-45deg)
-      color: black
-      font-size: 1.73333em
-      margin-left: -1px
+    +white_block
+    &:hover
+      .social_descr
+        opacity: 1
   &_descr
-    margin-left: 20px
+    position: absolute
     color: white
     opacity: 0
+    transform: rotate(-45deg)
     transition: all linear 0.2s
+    pointer-events: none
+    &_1
+      bottom: 60px
+      left: 35px
+    &_2
+      bottom: 60px
+      left: 35px
+    &_3
+      bottom: 55px
+      left: 33px
+
+
     
 
     
