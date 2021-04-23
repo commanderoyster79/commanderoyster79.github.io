@@ -1,6 +1,13 @@
-const one = document.querySelector(".main_square_page_one")
+const one = document.querySelector(".main_square")
 const t1 = new TimelineMax();
+var elements = document.getElementsByClassName('header_square')[0];
+var element = document.getElementsByClassName('main_square_small_1')[0];
+console.log(elements);
+console.log(element);
 
+elements.onclick = function() {
+  element.style.border = 'red';
+}
 
 function snow(){
 t1.fromTo(one,0,{width:"0px"},{width:"450px",ease: Power2.easeInOut})
