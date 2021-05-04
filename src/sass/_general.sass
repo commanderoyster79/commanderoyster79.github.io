@@ -69,14 +69,12 @@ a
   height: 40px
   top: 50px
   right: 50px
-  &_block
-    display: flex
-    justify-content: center
-    align-items: center
   &_square
     display: flex
     flex-wrap: wrap
     +white_block
+    width: 33px
+    height: 33px
     margin-right: 20px
     &:hover
       .header_descr
@@ -90,19 +88,17 @@ a
       outline: 0.5px solid black
       outline-offset: -0.5px
       background-clip: padding-box
-      width: 10px
-      height: 10px
+      width: 11px
+      height: 11px
   &_descr
     position: absolute
-    top: 39px
-    right: 30px
+    top: 42px
+    right: 33px
     color: white
     opacity: 0
     transition: all linear 0.2s
     pointer-events: none
     transform: rotate(-45deg)
-  
-    
 .logo
   display: flex
   position: absolute
@@ -120,10 +116,6 @@ a
     top: -55px
     left: 27px
     transform: rotate(-45deg)
-  &_block
-    display: flex
-    justify-content: center
-    align-items: center
   &_square
     display: flex
     justify-content: center
@@ -136,7 +128,7 @@ a
   &_line
     position: absolute
     width: 23px
-    height: 4px
+    height: 3px
     background-color: black
     &_1
       transform: rotate(180deg)
@@ -163,11 +155,50 @@ a
     bottom: 120px
   &_3
     bottom: 60px
-  &_item
+  &_item_1
+    &:after
+      content: ''
+      position: absolute 
+      bottom: 0px
+      right: 0px
+      height: 0px
+      width: 0px
+      transition: all linear 0.2s
+      background-color: rgb(19,67,153)
+      border: 0px solid rgb(19,67,153)
+  &_item_3
+    &:after
+      content: ''
+      position: absolute 
+      bottom: 0px
+      right: 0px
+      height: 0px
+      width: 0px
+      transition: all linear 0.2s
+      background-color: rgb(34,122,239)
+      outline: 0px solid rgb(34,122,239)
+  &_wrapper
     +white_block
     &:hover
       .social_descr
         opacity: 1
+      .social_item_1
+        &:after
+          z-index: -1
+          height: 30px
+          width: 30px
+          border: 1px solid rgb(19,67,153)
+      .social_item_3
+        &:after
+          z-index: -1
+          height: 30px
+          width: 30px
+          outline: 1px solid rgb(34,122,239)
+      .social_be
+        fill: white
+      .social_f
+        fill: white
+          
   &_descr
     position: absolute
     color: white
@@ -184,6 +215,19 @@ a
     &_3
       bottom: 47px
       left: 26px
+  &_be
+    margin: 6px
+    transform: rotate(-45deg)
+    width: 24px
+    height: 24px
+    transition: all linear 0.2s
+  &_f
+    margin: 0px 10px
+    transform: rotate(-45deg)
+    width: 24px
+    height: 24px
+    transition: all linear 0.2s
+    
 
 
     
