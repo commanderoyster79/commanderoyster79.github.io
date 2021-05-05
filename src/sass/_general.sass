@@ -66,8 +66,7 @@ a
   align-items: center
   position: absolute
   width: 40px
-  height: 40px
-  top: 50px
+  top: 48px
   right: 50px
   &_square
     display: flex
@@ -79,6 +78,24 @@ a
     &:hover
       .header_descr
         opacity: 1
+      .header_square_small_1
+        background-color: rgb(238,54,64)
+      .header_square_small_2
+        background-color: rgb(255,221,21)
+      .header_square_small_3
+        background-color: rgb(139,197,63)
+      .header_square_small_4
+        background-color: rgb(229,53,120)
+      .header_square_small_5
+        background-color: rgb(250,175,64)
+      .header_square_small_6
+        background-color: rgb(41,180,115)
+      .header_square_small_7
+        background-color: rgb(134,58,154)
+      .header_square_small_8
+        background-color: rgb(40,86,210)
+      .header_square_small_9
+        background-color: rgb(34,122,239)
     &_small
       display: flex
       justify-content: center
@@ -90,6 +107,24 @@ a
       background-clip: padding-box
       width: 11px
       height: 11px
+      &_1
+        transition: all linear 0.5s
+      &_2
+        transition: all linear 0.4s
+      &_3
+        transition: all linear 0.3s
+      &_4
+        transition: all linear 0.4s
+      &_5
+        transition: all linear 0.3s
+      &_6
+        transition: all linear 0.2s
+      &_7
+        transition: all linear 0.3s
+      &_8
+        transition: all linear 0.2s
+      &_9
+        transition: all linear 0.1s
   &_descr
     position: absolute
     top: 42px
@@ -106,6 +141,12 @@ a
   height: 40px
   top: 50px
   left: 50px
+  &_l
+    margin: -3.7px -8px
+    transform: rotate(-45deg)
+    width: 41px
+    height: 41px
+    transition: all linear 0.2s
   &_descr
     color: white
     line-height: 20px
@@ -121,27 +162,30 @@ a
     justify-content: center
     align-items: center
     +white_block
+    width: 29px
+    height: 29px
     margin-right: 20px
-    &:hover
-      .logo_descr
-        opacity: 1
-  &_line
-    position: absolute
-    width: 23px
-    height: 3px
-    background-color: black
-    &_1
-      transform: rotate(180deg)
-      left: -3px
-      width: 38px
-    &_2
-      transform: rotate(45deg)
-      left: -5px
-      top: 21px
-    &_3
-      transform: rotate(45deg)
-      left: 13px
-      top: 5px
+    &:after
+      content: ''
+      position: absolute 
+      bottom: 0px
+      right: 0px
+      height: 0px
+      width: 0px
+      transition: all linear 0.2s
+      background: linear-gradient(to right bottom, rgb(10,150,67), rgb(240,217,23))
+      border-image: 0px solid linear-gradient(to right bottom, rgb(10,150,67), rgb(240,217,23))
+  &:hover
+    .logo_descr
+      opacity: 1
+    .logo_square
+      &:after
+        z-index: -1
+        height: 29px
+        width: 29px
+        border-image: 1px solid linear-gradient(to right bottom, rgb(10,150,67), rgb(240,217,23))
+    .logo_l
+      fill: white
 .social
   position: absolute
   width: 140px
@@ -166,6 +210,17 @@ a
       transition: all linear 0.2s
       background-color: rgb(19,67,153)
       border: 0px solid rgb(19,67,153)
+  &_item_2
+    &:after
+      content: ''
+      position: absolute 
+      bottom: 0px
+      right: 0px
+      height: 0px
+      width: 0px
+      transition: all linear 0.2s
+      background: linear-gradient(to left top, rgb(250,143,33), rgb(221,58,114),rgb(144,65,151))
+      border-image: 0px solid linear-gradient(to left top, rgb(250,143,33), rgb(221,58,114),rgb(144,65,151))
   &_item_3
     &:after
       content: ''
@@ -176,7 +231,7 @@ a
       width: 0px
       transition: all linear 0.2s
       background-color: rgb(34,122,239)
-      outline: 0px solid rgb(34,122,239)
+      border: 0px solid rgb(34,122,239)
   &_wrapper
     +white_block
     &:hover
@@ -188,15 +243,23 @@ a
           height: 30px
           width: 30px
           border: 1px solid rgb(19,67,153)
+      .social_item_2
+        &:after
+          z-index: -1
+          height: 30px
+          width: 30px
+          border-image: 1px linear-gradient(to left top, rgb(250,143,33), rgb(221,58,114),rgb(144,65,151))
       .social_item_3
         &:after
           z-index: -1
           height: 30px
           width: 30px
-          outline: 1px solid rgb(34,122,239)
+          border: 1px solid rgb(34,122,239)
       .social_be
         fill: white
       .social_f
+        fill: white
+      .social_inst
         fill: white
           
   &_descr
@@ -226,6 +289,12 @@ a
     transform: rotate(-45deg)
     width: 24px
     height: 24px
+    transition: all linear 0.2s
+  &_inst
+    margin: -3.7px -8px
+    transform: rotate(-45deg)
+    width: 37px
+    height: 35px
     transition: all linear 0.2s
     
 
