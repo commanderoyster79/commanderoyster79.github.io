@@ -142,6 +142,7 @@ a
   top: 50px
   left: 50px
   &_l
+    background-image: url('../icons/logo.svg')
     margin: -3.7px -8px
     transform: rotate(-45deg)
     width: 41px
@@ -185,7 +186,7 @@ a
         width: 29px
         border-image: 1px solid linear-gradient(to right bottom, rgb(10,150,67), rgb(240,217,23))
     .logo_l
-      fill: white
+      filter: brightness(0) invert(1)
 .social
   position: absolute
   width: 140px
@@ -256,11 +257,11 @@ a
           width: 30px
           border: 1px solid rgb(34,122,239)
       .social_be
-        fill: white
+        filter: brightness(0) invert(1)
       .social_f
-        fill: white
+        filter: brightness(0) invert(1)
       .social_inst
-        fill: white
+        filter: brightness(0) invert(1)
           
   &_descr
     position: absolute
@@ -279,18 +280,21 @@ a
       bottom: 47px
       left: 26px
   &_be
-    margin: 6px
+    background-image: url('../icons/Be.svg')
+    margin: 7px 4px
     transform: rotate(-45deg)
     width: 24px
-    height: 24px
+    height: 15px
     transition: all linear 0.2s
   &_f
-    margin: 0px 10px
+    background-image: url('../icons/f.svg')
+    margin: 6px 10px
     transform: rotate(-45deg)
-    width: 24px
-    height: 24px
+    width: 10px
+    height: 19px
     transition: all linear 0.2s
   &_inst
+    background-image: url('../icons/inst.svg')
     margin: -3.7px -8px
     transform: rotate(-45deg)
     width: 37px
