@@ -1,0 +1,87 @@
+.right
+  position: fixed
+  width: 180px
+  height: 937px
+  background-color: black
+  right: 0
+  &_square
+    position: absolute
+    right: 43px
+    top: 48px
+    display: flex
+    flex-wrap: wrap
+    +white_block
+    width: 33px
+    height: 33px
+    margin-right: 20px
+    &:hover
+      .right_descr
+        opacity: 1
+      .right_square_small_1
+        background-color: rgb(238,54,64)
+      .right_square_small_2
+        background-color: rgb(255,221,21)
+      .right_square_small_3
+        background-color: rgb(139,197,63)
+      .right_square_small_4
+        background-color: rgb(229,53,120)
+      .right_square_small_5
+        background-color: rgb(250,175,64)
+      .right_square_small_6
+        background-color: rgb(41,180,115)
+      .right_square_small_7
+        background-color: rgb(134,58,154)
+      .right_square_small_8
+        background-color: rgb(40,86,210)
+      .right_square_small_9
+        background-color: rgb(34,122,239)
+    &_small
+      display: flex
+      justify-content: center
+      align-items: center
+      background-color: white
+      border: 1px solid black
+      outline: 0.5px solid black
+      outline-offset: -0.5px
+      background-clip: padding-box
+      width: 11px
+      height: 11px
+      &_1
+        transition: all linear 0.5s
+      &_2
+        transition: all linear 0.4s
+      &_3
+        transition: all linear 0.3s
+      &_4
+        transition: all linear 0.4s
+      &_5
+        transition: all linear 0.3s
+      &_6
+        transition: all linear 0.2s
+      &_7
+        transition: all linear 0.3s
+      &_8
+        transition: all linear 0.2s
+      &_9
+        transition: all linear 0.1s
+  &_descr
+    position: absolute
+    top: 42px
+    right: 33px
+    color: white
+    opacity: 0
+    transition: all linear 0.2s
+    pointer-events: none
+    transform: rotate(-45deg)
+
+
+.left
+  position: fixed
+  width: 180px
+  height: 937px
+  background-color: black
+  left: 0
+.promo
+    width: 100%
+    height: 937px
+    background-color: white
