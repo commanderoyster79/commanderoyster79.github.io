@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="41px"
 	 height="41px" viewBox="0 0 41 41" enable-background="new 0 0 41 41" xml:space="preserve">
-<g id="Guides_For_Artboard">
-</g>
 <g id="Layer_2" display="none">
 	
-		<rect x="-2142.208" y="-1377.208" display="inline" fill="#58595B" stroke="#231F20" stroke-miterlimit="10" width="5040" height="3156"/>
+		<rect x="-2140.708" y="-1195.875" display="inline" fill="#58595B" stroke="#231F20" stroke-miterlimit="10" width="5040" height="3156"/>
 </g>
 <g id="Layer_3" display="none">
-	<rect x="-2111.921" y="-1344.075" display="inline" width="5170.966" height="3239.352"/>
+	<rect x="-2110.421" y="-1162.742" display="inline" width="5170.966" height="3239.352"/>
 </g>
-<g id = "instagram">
-	<path d="M29.438,20.46c0-1.146-0.222-2.239-0.608-3.25h8.881l-3-3h-7.767c-1.665-1.766-4.019-2.875-6.631-2.875
-		s-4.966,1.109-6.631,2.875H6.29l-3,3h8.506c-0.387,1.011-0.608,2.104-0.608,3.25c0,5.032,4.093,9.125,9.125,9.125
-		C25.344,29.586,29.438,25.492,29.438,20.46z M20.312,26.586c-3.378,0-6.125-2.748-6.125-6.125s2.747-6.125,6.125-6.125
-		c3.377,0,6.125,2.748,6.125,6.125S23.689,26.586,20.312,26.586z"/>
+<g id="Layer_1">
+	
+		<rect x="6.003" y="6.004" transform="matrix(0.7071 0.7071 -0.7071 0.7071 20.5014 -8.4907)" fill="#FFFFFF" width="28.992" height="28.991"/>
+	<path d="M29.438,20.459c0-1.146-0.223-2.238-0.609-3.25h10.881l-3-3h-9.766c-1.666-1.766-4.02-2.875-6.632-2.875
+		c-2.611,0-4.965,1.109-6.63,2.875H4.29l-3,3h10.506c-0.387,1.012-0.608,2.104-0.608,3.25c0,5.032,4.093,9.125,9.125,9.125
+		C25.344,29.584,29.438,25.491,29.438,20.459z M20.312,26.584c-3.378,0-6.125-2.747-6.125-6.125c0-3.377,2.747-6.125,6.125-6.125
+		s6.126,2.748,6.126,6.125C26.438,23.837,23.689,26.584,20.312,26.584z"/>
 </g>
 </svg>

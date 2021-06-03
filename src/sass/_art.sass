@@ -1,87 +1,198 @@
 .right
   position: fixed
-  width: 180px
-  height: 937px
+  width: 200px
+  height: 100%
   background-color: black
   right: 0
   &_square
     position: absolute
-    right: 43px
-    top: 48px
-    display: flex
-    flex-wrap: wrap
-    +white_block
-    width: 33px
-    height: 33px
-    margin-right: 20px
+    right: 33px
+    top: 44px
+    background-image: url('../icons/main.svg')
+    width: 41px
+    height: 41px
+    transition: all linear 0.2s
     &:hover
+      background-image: url('../icons/main_color.svg')
       .right_descr
         opacity: 1
-      .right_square_small_1
-        background-color: rgb(238,54,64)
-      .right_square_small_2
-        background-color: rgb(255,221,21)
-      .right_square_small_3
-        background-color: rgb(139,197,63)
-      .right_square_small_4
-        background-color: rgb(229,53,120)
-      .right_square_small_5
-        background-color: rgb(250,175,64)
-      .right_square_small_6
-        background-color: rgb(41,180,115)
-      .right_square_small_7
-        background-color: rgb(134,58,154)
-      .right_square_small_8
-        background-color: rgb(40,86,210)
-      .right_square_small_9
-        background-color: rgb(34,122,239)
-    &_small
-      display: flex
-      justify-content: center
-      align-items: center
-      background-color: white
-      border: 1px solid black
-      outline: 0.5px solid black
-      outline-offset: -0.5px
-      background-clip: padding-box
-      width: 11px
-      height: 11px
-      &_1
-        transition: all linear 0.5s
-      &_2
-        transition: all linear 0.4s
-      &_3
-        transition: all linear 0.3s
-      &_4
-        transition: all linear 0.4s
-      &_5
-        transition: all linear 0.3s
-      &_6
-        transition: all linear 0.2s
-      &_7
-        transition: all linear 0.3s
-      &_8
-        transition: all linear 0.2s
-      &_9
-        transition: all linear 0.1s
+    //   .right_square_small_1
+    //     background-color: rgb(238,54,64)
+    //   .right_square_small_2
+    //     background-color: rgb(255,221,21)
+    //   .right_square_small_3
+    //     background-color: rgb(139,197,63)
+    //   .right_square_small_4
+    //     background-color: rgb(229,53,120)
+    //   .right_square_small_5
+    //     background-color: rgb(250,175,64)
+    //   .right_square_small_6
+    //     background-color: rgb(41,180,115)
+    //   .right_square_small_7
+    //     background-color: rgb(134,58,154)
+    //   .right_square_small_8
+    //     background-color: rgb(40,86,210)
+    //   .right_square_small_9
+    //     background-color: rgb(34,122,239)
+    // &_small
+    //   display: flex
+    //   justify-content: center
+    //   align-items: center
+    //   background-color: white
+    //   border: 1px solid black
+    //   outline: 0.5px solid black
+    //   outline-offset: -0.5px
+    //   background-clip: padding-box
+    //   width: 11px
+    //   height: 11px
+    //   &_1
+    //     transition: all linear 0.5s
+    //   &_2
+    //     transition: all linear 0.4s
+    //   &_3
+    //     transition: all linear 0.3s
+    //   &_4
+    //     transition: all linear 0.4s
+    //   &_5
+    //     transition: all linear 0.3s
+    //   &_6
+    //     transition: all linear 0.2s
+    //   &_7
+    //     transition: all linear 0.3s
+    //   &_8
+    //     transition: all linear 0.2s
+    //   &_9
+    //     transition: all linear 0.1s
   &_descr
     position: absolute
-    top: 42px
-    right: 33px
+    top: 8px
+    right: 51px
     color: white
     opacity: 0
     transition: all linear 0.2s
     pointer-events: none
-    transform: rotate(-45deg)
-
-
+    //transform: rotate(-45deg)
 .left
   position: fixed
   width: 180px
-  height: 937px
+  height: 100%
   background-color: black
   left: 0
+
+.navigation
+  position: absolute
+  width: 140px
+  display: flex
+  align-items: center
+  margin-left: 132px
+  &_1
+    bottom: 180px
+  &_2
+    bottom: 120px
+  &_3
+    bottom: 60px
+  &_item_1
+    // &:after
+    //   content: ''
+    //   position: absolute 
+    //   bottom: 0px
+    //   right: 0px
+    //   height: 0px
+    //   width: 0px
+    //   transition: all linear 0.2s
+    //   background-color: rgb(19,67,153)
+    //   border: 0px solid rgb(19,67,153)
+  &_item_2
+    // &:after
+    //   content: ''
+    //   position: absolute 
+    //   bottom: 0px
+    //   right: 0px
+    //   height: 0px
+    //   width: 0px
+    //   transition: all linear 0.2s
+    //   background: linear-gradient(to left top, rgb(250,143,33), rgb(221,58,114),rgb(144,65,151))
+    //   border-image: 0px solid linear-gradient(to left top, rgb(250,143,33), rgb(221,58,114),rgb(144,65,151))
+  &_item_3
+    // &:after
+    //   content: ''
+    //   position: absolute 
+    //   bottom: 0px
+    //   right: 0px
+    //   height: 0px
+    //   width: 0px
+    //   transition: all linear 0.2s
+    //   background-color: rgb(34,122,239)
+    //   border: 0px solid rgb(34,122,239)
+  &_wrapper
+    +white_block
+    &:hover
+      .navigation_descr
+        opacity: 1
+      .social_item_1
+        // &:after
+        //   z-index: -1
+        //   height: 30px
+        //   width: 30px
+        //   border: 1px solid rgb(19,67,153)
+      .social_item_2
+        // &:after
+        //   z-index: -1
+        //   height: 29px
+        //   width: 29px
+        //   border-image: 1px linear-gradient(to left top, rgb(250,143,33), rgb(221,58,114),rgb(144,65,151))
+      .social_item_3
+        // &:after
+        //   z-index: -1
+        //   height: 30px
+        //   width: 30px
+        //   border: 1px solid rgb(34,122,239)
+      .navigation_right
+        background-image: url('../icons/art/right_color.svg')
+      .navigation_left
+        background-image: url('../icons/art/left_color.svg')
+      .navigation_top
+        background-image: url('../icons/art/top_color.svg')       
+  &_descr
+    position: absolute
+    color: white
+    opacity: 0
+    transform: rotate(-45deg)
+    transition: all linear 0.2s
+    pointer-events: none
+    &_1
+      top: 50px
+      right: 25px
+    &_2
+      top: 50px
+      right: 25px
+    &_3
+      top: 46px
+      right: 32px
+  &_right
+    background-image: url('../icons/art/right.svg')
+    margin: -6px -6px
+    transform: rotate(-45deg)
+    width: 41px
+    height: 41px
+    transition: all linear 0.2s
+  &_left
+    background-image: url('../icons/art/left.svg')
+    margin: -6px -6px
+    transform: rotate(-45deg)
+    width: 41px
+    height: 41px
+    transition: all linear 0.2s
+  &_top
+    background-image: url('../icons/art/top.svg')
+    margin: -6px -6px
+    transform: rotate(-45deg)
+    width: 41px
+    height: 41px
+    transition: all linear 0.2s
 .promo
-    width: 100%
-    height: 937px
-    background-color: white
+  display: block
+  margin: 0 auto  
+  width: 1400px
+  height: 4000px
+  background-color: white

@@ -23,12 +23,13 @@ gulp.task('styles', function() {
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());
-})
+});
 
 gulp.task('watch', function(){
-    gulp.watch("src/sass/*.+(scss|sass)", gulp.parallel("styles"))
-    gulp.watch("src/index.html").on("change",browserSync.reload)
+    gulp.watch("src/sass/*.+(scss|sass)", gulp.parallel("styles"));
+    gulp.watch("src/index.html").on("change",browserSync.reload);
     gulp.watch("src/html/*.html").on("change",browserSync.reload);
+    gulp.watch("src/html/art/*.html").on("change",browserSync.reload);
 });
 
 gulp.task('default', gulp.parallel('watch','server','styles'));
