@@ -1,5 +1,5 @@
 body
-    background-color: black
+    background-color: $main_color
     margin: 0
 a
     text-decoration: none
@@ -21,7 +21,7 @@ a
           background-color: white
           background-clip: padding-box
           box-sizing: border-box
-          border: 4px solid black
+          border: 4px solid $main_color
           width: 149px
           height: 150px
           &_7
@@ -77,53 +77,6 @@ a
       background-image: url('../icons/main_color.svg')
       .header_descr
         opacity: 1
-    //   .header_square_small_1
-    //     background-color: rgb(238,54,64)
-    //   .header_square_small_2
-    //     background-color: rgb(255,221,21)
-    //   .header_square_small_3
-    //     background-color: rgb(139,197,63)
-    //   .header_square_small_4
-    //     background-color: rgb(229,53,120)
-    //   .header_square_small_5
-    //     background-color: rgb(250,175,64)
-    //   .header_square_small_6
-    //     background-color: rgb(41,180,115)
-    //   .header_square_small_7
-    //     background-color: rgb(134,58,154)
-    //   .header_square_small_8
-    //     background-color: rgb(40,86,210)
-    //   .header_square_small_9
-    //     background-color: rgb(34,122,239)
-    // &_small
-    //   display: flex
-    //   justify-content: center
-    //   align-items: center
-    //   background-color: white
-    //   border: 1px solid black
-    //   outline: 0.5px solid black
-    //   outline-offset: -0.5px
-    //   background-clip: padding-box
-    //   width: 11px
-    //   height: 11px
-    //   &_1
-    //     transition: all linear 0.5s
-    //   &_2
-    //     transition: all linear 0.4s
-    //   &_3
-    //     transition: all linear 0.3s
-    //   &_4
-    //     transition: all linear 0.4s
-    //   &_5
-    //     transition: all linear 0.3s
-    //   &_6
-    //     transition: all linear 0.2s
-    //   &_7
-    //     transition: all linear 0.3s
-    //   &_8
-    //     transition: all linear 0.2s
-    //   &_9
-    //     transition: all linear 0.1s
   &_descr
     position: absolute
     top: 8px
@@ -132,7 +85,6 @@ a
     opacity: 0
     transition: all linear 0.2s
     pointer-events: none
-    //transform: rotate(-45deg)
 .logo
   display: flex
   position: absolute
@@ -165,25 +117,9 @@ a
     width: 29px
     height: 29px
     margin-right: 20px
-    // &:after
-    //   content: ''
-    //   position: absolute 
-    //   bottom: 0px
-    //   right: 0px
-    //   height: 0px
-    //   width: 0px
-    //   transition: all linear 0.2s
-    //   background: linear-gradient(to right bottom, rgb(10,150,67), rgb(240,217,23))
-    //   border-image: 0px solid linear-gradient(to right bottom, rgb(10,150,67), rgb(240,217,23))
   &:hover
     .logo_descr
       opacity: 1
-    // .logo_square
-    //   &:after
-    //     z-index: -1
-    //     height: 29px
-    //     width: 29px
-    //     border-image: 1px solid linear-gradient(to right bottom, rgb(10,150,67), rgb(240,217,23))
     .logo_l
       background-image: url('../icons/logo_color.svg')
 .social
@@ -199,62 +135,11 @@ a
     bottom: 120px
   &_3
     bottom: 60px
-  &_item_1
-    // &:after
-    //   content: ''
-    //   position: absolute 
-    //   bottom: 0px
-    //   right: 0px
-    //   height: 0px
-    //   width: 0px
-    //   transition: all linear 0.2s
-    //   background-color: rgb(19,67,153)
-    //   border: 0px solid rgb(19,67,153)
-  &_item_2
-    // &:after
-    //   content: ''
-    //   position: absolute 
-    //   bottom: 0px
-    //   right: 0px
-    //   height: 0px
-    //   width: 0px
-    //   transition: all linear 0.2s
-    //   background: linear-gradient(to left top, rgb(250,143,33), rgb(221,58,114),rgb(144,65,151))
-    //   border-image: 0px solid linear-gradient(to left top, rgb(250,143,33), rgb(221,58,114),rgb(144,65,151))
-  &_item_3
-    // &:after
-    //   content: ''
-    //   position: absolute 
-    //   bottom: 0px
-    //   right: 0px
-    //   height: 0px
-    //   width: 0px
-    //   transition: all linear 0.2s
-    //   background-color: rgb(34,122,239)
-    //   border: 0px solid rgb(34,122,239)
   &_wrapper
     +white_block
     &:hover
       .social_descr
         opacity: 1
-      .social_item_1
-        // &:after
-        //   z-index: -1
-        //   height: 30px
-        //   width: 30px
-        //   border: 1px solid rgb(19,67,153)
-      .social_item_2
-        // &:after
-        //   z-index: -1
-        //   height: 29px
-        //   width: 29px
-        //   border-image: 1px linear-gradient(to left top, rgb(250,143,33), rgb(221,58,114),rgb(144,65,151))
-      .social_item_3
-        // &:after
-        //   z-index: -1
-        //   height: 30px
-        //   width: 30px
-        //   border: 1px solid rgb(34,122,239)
       .social_be
         background-image: url('../icons/Be_color.svg')
       .social_f
