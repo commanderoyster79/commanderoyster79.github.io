@@ -18,13 +18,13 @@ window.addEventListener('DOMContentLoaded', () => {
             move(leftLine,(scroll-700),0,0);
             move(rightLine,(-scroll+700),0,0);
         }
-        if (scroll == 1100) {
+        if (scroll == 700) {
             move(leftLine,0,0,0);
             move(rightLine,0,0,0);
         }
         
         if (scroll >= 300 && scroll <= 2600 ) {
-            move(yagaImg,(-1100+scroll),0,0);
+            move(yagaImg,(-1100+scroll/1.3),0,0);
         }
 
         if (scroll >= 1700 && scroll <= 2900) {
