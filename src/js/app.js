@@ -14,17 +14,17 @@ window.addEventListener('DOMContentLoaded', () => {
         let scroll = window.pageYOffset || document.documentElement.scrollTop ||
                  document.body.scrollTop || 0;
         
-        if (scroll < 1100) {
-            move(leftLine,(scroll-1100),0,0);
-            move(rightLine,(-scroll+1100),0,0);
+        if (scroll < 700) {
+            move(leftLine,(scroll-700),0,0);
+            move(rightLine,(-scroll+700),0,0);
         }
         if (scroll == 1100) {
             move(leftLine,0,0,0);
             move(rightLine,0,0,0);
         }
         
-        if (scroll >= 300 && scroll <= 1300 ) {
-            move(yagaImg,(-1300+scroll),0,0);
+        if (scroll >= 300 && scroll <= 2600 ) {
+            move(yagaImg,(-1100+scroll),0,0);
         }
 
         if (scroll >= 1700 && scroll <= 2900) {
