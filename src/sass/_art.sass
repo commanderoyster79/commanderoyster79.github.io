@@ -18,6 +18,7 @@
       .right_descr
         opacity: 1
   &_descr
+    font-family: 'Roboto-Thin'
     position: absolute
     top: 8px
     right: 51px
@@ -32,7 +33,10 @@
   background-color: $main_color
   left: 0
   z-index: 2
-
+  &_logo_descr
+    font-family: 'Roboto-Thin'
+  &_social_descr
+    font-family: 'Roboto-Thin'
 .navigation
   position: absolute
   width: 140px
@@ -60,6 +64,7 @@
       .navigation_top
         background-image: url('../icons/art/top_color.svg')       
   &_descr
+    font-family: 'Roboto-Thin'
     position: absolute
     color: white
     opacity: 0
@@ -122,9 +127,14 @@
     justify-content: space-between
     &_header
       font-size: 36px
-      font-family: 'Robotocondensed'
+      font-family: 'RobotoCondensed-Light'
       color: white
       text-transform: uppercase
+      &_black
+        position: absolute
+        width: 140px
+        height: 50px
+        background-color: black
     &_left
       +line_art
     &_right
@@ -149,7 +159,7 @@
       position: absolute
       width: 1935px
       height: 363px
-      right: 430px
+      right: 300px
       background-image: url('../img/fairy/skazki_03.png')
       z-index: 1
   &_exposition
@@ -165,8 +175,13 @@
     &_header
       font-size: 36px
       color: white
-      font-family: 'Robotocondensed'
+      font-family: 'RobotoCondensed-Light'
       text-transform: uppercase
+      &_black
+        position: absolute
+        width: 390px
+        height: 50px
+        background-color: black
     &_left
       +line_art
       width: 195px
@@ -209,8 +224,13 @@
     &_header
       font-size: 36px
       color: white
-      font-family: 'Robotocondensed'
+      font-family: 'RobotoCondensed-Light'
       text-transform: uppercase
+      &_black
+        position: absolute
+        width: 120px
+        height: 50px
+        background-color: black
     &_left
       +line_art
       width: 330px
@@ -253,7 +273,7 @@
     &_header
       font-size: 36px
       color: white
-      font-family: 'Robotocondensed'
+      font-family: 'RobotoCondensed-Light'
       text-transform: uppercase
     &_left
       +line_art
