@@ -19,6 +19,14 @@ window.addEventListener('DOMContentLoaded', () => {
     const headerGoblinBlack = document.querySelector('.goblin_box_header_black');
     const goblinImg = document.querySelector('.goblin_img_goblin');
     const goblinCache = document.querySelector('.goblin_cache_move');
+
+
+
+    const leftBirdsLine = document.querySelector('.birds_box_left');
+    const rightBirdsLine = document.querySelector('.birds_box_right');
+    const headerBirdsBlack = document.querySelector('.birds_box_header_black');
+    const birdsImg = document.querySelector('.birds_img_birds');
+    const birdsCache = document.querySelector('.birds_cache_move');
     
 
     
@@ -32,6 +40,10 @@ window.addEventListener('DOMContentLoaded', () => {
         atribute.style.height = `${height}px`;
     }
 
+    function transitionHeader (atribute,time) {
+        atribute.style.transition = `${time}s all`;
+    }
+
 
 
 
@@ -41,7 +53,7 @@ window.addEventListener('DOMContentLoaded', () => {
         let scroll = window.pageYOffset || document.documentElement.scrollTop ||
                  document.body.scrollTop || 0;
         
-        //YAGA
+        //************************YAGA********************\\
 
         if (scroll < 700) {
             move(leftYagaLine,(scroll-700),0,0);
@@ -51,11 +63,12 @@ window.addEventListener('DOMContentLoaded', () => {
             move(leftYagaLine,0,0,0);
             move(rightYagaLine,0,0,0);
         }
-        if (scroll >= 300 && scroll <= 700) {
-            hiddenHeader(headerYagaBlack,80-scroll/10);
+        if (scroll >= 450 && scroll <= 550) {
+            hiddenHeader(headerYagaBlack,50);
+            transitionHeader(headerYagaBlack,0.3);
         } 
 
-        if (scroll >= 700) {
+        if (scroll >= 550) {
             hiddenHeader(headerYagaBlack,0);
         }
         if (scroll >= 300 && scroll <= 2600 ) {
@@ -70,23 +83,24 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-        // MARES
+        //***********************MARES******************\\
 
-        if (scroll >= 2900 && scroll <= 3300 ) {
-            move(leftMaresLine,(scroll - 3300),0,0);
-            move(rightMaresLine,(-scroll + 3300),0,0);
+        if (scroll >= 3000 && scroll <= 3400 ) {
+            move(leftMaresLine,(scroll - 3400),0,0);
+            move(rightMaresLine,(-scroll + 3400),0,0);
         }
 
-        if (scroll >= 3300) {
+        if (scroll >= 3400) {
             move(leftMaresLine,0,0,0);
             move(rightMaresLine,0,0,0);
         }
 
-        if (scroll >= 3000 && scroll <= 3500) {
-            hiddenHeader(headerMaresBlack,(113-scroll/30)*3);
+        if (scroll >= 3200 && scroll <= 3300) {
+            hiddenHeader(headerMaresBlack,50);
+            transitionHeader(headerMaresBlack,0.3);
         } 
 
-        if (scroll >= 3500) {
+        if (scroll >= 3300) {
             hiddenHeader(headerMaresBlack,0);
         }
 
@@ -100,7 +114,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-        //GOBLIN
+        //*******************GOBLIN*********************\\
 
         if (scroll >= 5700 && scroll <= 6200 ) {
             move(leftGoblinLine,(scroll - 6200),0,0);
@@ -112,11 +126,12 @@ window.addEventListener('DOMContentLoaded', () => {
             move(rightGoblinLine,0,0,0);
         }
 
-        if (scroll >= 5800 && scroll <= 6200) {
-            hiddenHeader(headerGoblinBlack,(86-scroll/76)*4);
+        if (scroll >= 6000 && scroll <= 6100) {
+            hiddenHeader(headerGoblinBlack,50);
+            transitionHeader(headerGoblinBlack,0.3);
         } 
 
-        if (scroll >= 6200) {
+        if (scroll >= 6100) {
             hiddenHeader(headerGoblinBlack,0);
         }
 
@@ -129,6 +144,35 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         
+
+        //*****************BIRDS***********************\\
+
+        if (scroll >= 8300 && scroll <= 8800 ) {
+            move(leftBirdsLine,(scroll - 8800),0,0);
+            move(rightBirdsLine,(-scroll + 8800),0,0);
+        }
+
+        if (scroll >= 8800) {
+            move(leftBirdsLine,0,0,0);
+            move(rightBirdsLine,0,0,0);
+        }
+
+        if (scroll >= 8600 && scroll <= 8700) {
+            hiddenHeader(headerBirdsBlack,50);
+            transitionHeader(headerBirdsBlack,0.3);
+        } 
+
+        if (scroll >= 8700) {
+            hiddenHeader(headerBirdsBlack,0);
+        }
+
+        if (scroll >= 8500 && scroll <= 10600 ) {
+            move(birdsImg,(8700-scroll/1.1),0,0);
+        }
+
+        if (scroll >= 8500 && scroll <= 11000) {
+            move(birdsCache,(-2000+scroll/5),0,0);
+        }
         
         console.log(scroll);
         
