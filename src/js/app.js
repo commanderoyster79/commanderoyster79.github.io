@@ -55,7 +55,7 @@ window.addEventListener('DOMContentLoaded', () => {
         
         //************************YAGA********************\\
 
-        if (scroll >= 400 && scroll <= 500) {
+        if (scroll >= 200 && scroll <= 500) {
             hiddenHeader(headerYagaBlack,50);
             transitionHeader(headerYagaBlack,0.3);
 
@@ -84,7 +84,7 @@ window.addEventListener('DOMContentLoaded', () => {
         //***********************MARES******************\\
 
 
-        if (scroll >= 3200 && scroll <= 3300) {
+        if (scroll >= 2900 && scroll <= 3300) {
             hiddenHeader(headerMaresBlack,50);
             transitionHeader(headerMaresBlack,0.3);
 
@@ -111,7 +111,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         //*******************GOBLIN*********************\\
 
-        if (scroll >= 6000 && scroll <= 6100) {
+        if (scroll >= 5800 && scroll <= 6100) {
             hiddenHeader(headerGoblinBlack,50);
             transitionHeader(headerGoblinBlack,0.3);
 
@@ -139,7 +139,7 @@ window.addEventListener('DOMContentLoaded', () => {
         //*****************BIRDS***********************\\
 
 
-        if (scroll >= 8600 && scroll <= 8700) {
+        if (scroll >= 8400 && scroll <= 8700) {
             hiddenHeader(headerBirdsBlack,50);
             transitionHeader(headerBirdsBlack,0.3);
 
