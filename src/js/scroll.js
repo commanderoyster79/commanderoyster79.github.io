@@ -13,6 +13,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const kargopol = document.querySelector('.kargopol');
     const dunskaya = document.querySelector('.dunskaya');
     const almatel = document.querySelector('.almatel');
+    const all = document.querySelector('.all');
+
     
 
     function move (atribute,valueX,valueY,valueZ) {
@@ -38,6 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
     move (kargopol,0,scroll,0);
     move (dunskaya,0,scroll,0);
     move (almatel,0,scroll,0);
+    move (all,0,scroll,0);
 
     if (scroll >= 500) {
         move (moscow,0,-scroll+1000,0);
@@ -89,6 +92,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
     if (scroll >= 6500) {
         move (almatel,0,-scroll+13000,0);
+    }
+
+    if (scroll >= 7000) {
+        move (all,0,-scroll+14000,0);
     }
     
 
