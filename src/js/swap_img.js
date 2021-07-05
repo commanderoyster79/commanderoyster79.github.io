@@ -1,7 +1,5 @@
 const imgLinksLitres = [
-    'url(../../icons/logo/04_LITRES_01.webp)',
-    'url(../../icons/logo/05_LITRES_02.webp)',
-    'url(../../icons/logo/06_LITRES_03.webp)',
+    'url(../../icons/logo/04_LITRES_01.svg)',
     'url(../../icons/logo/07_LITRES_04.webp)'
 ];
 
