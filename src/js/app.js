@@ -141,7 +141,7 @@ window.addEventListener('DOMContentLoaded', () => {
         //*****************BIRDS***********************\\
 
 
-        if (scroll >= 8300 && scroll <= 8700) {
+        if (scroll >= 8200 && scroll <= 8700) {
             hiddenHeader(headerBirdsBlack,50);
             transitionHeader(headerBirdsBlack,0.3);
 
