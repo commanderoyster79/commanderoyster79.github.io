@@ -113,7 +113,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         //*******************GOBLIN*********************\\
 
-        if (scroll >= 5700 && scroll <= 6100) {
+        if (scroll >= 5500 && scroll <= 6100) {
             hiddenHeader(headerGoblinBlack,50);
             transitionHeader(headerGoblinBlack,0.3);
 
@@ -128,11 +128,11 @@ window.addEventListener('DOMContentLoaded', () => {
             move(rightGoblinLine,0,0,0);
         }
 
-        if (scroll >= 5900 && scroll <= 8000 ) {
+        if (scroll >= 5800 && scroll <= 8000 ) {
             move(goblinImg,(-5300+scroll/1.3),0,0);
         }
 
-        if (scroll >= 5900 && scroll <= 8300) {
+        if (scroll >= 5800 && scroll <= 8300) {
             move(goblinCache,(1700-scroll/5),0,0);
         }
 
@@ -156,15 +156,15 @@ window.addEventListener('DOMContentLoaded', () => {
             move(rightBirdsLine,0,0,0);
         }
 
-        if (scroll >= 8500 && scroll <= 10600 ) {
+        if (scroll >= 8400 && scroll <= 10600 ) {
             move(birdsImg,(8700-scroll/1.1),0,0);
         }
 
-        if (scroll >= 8500 && scroll <= 11000) {
+        if (scroll >= 8400 && scroll <= 11000) {
             move(birdsCache,(-2000+scroll/5),0,0);
         }
 
-
+        console.log(scroll);
       });
       
     
