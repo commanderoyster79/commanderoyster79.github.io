@@ -163,17 +163,6 @@ window.addEventListener('DOMContentLoaded', () => {
         if (scroll >= 8500 && scroll <= 11000) {
             move(birdsCache,(-2000+scroll/5),0,0);
         }
-        
-        console.log(scroll);
-        
-
-        //300-1100
-
-        //-362  0
-
-        //1700 - 2900
-
-
 
 
       });

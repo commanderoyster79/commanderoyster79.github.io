@@ -15,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const almatel = document.querySelector('.almatel');
     const all = document.querySelector('.all');
 
+
     
 
     function move (atribute,valueX,valueY,valueZ) {
