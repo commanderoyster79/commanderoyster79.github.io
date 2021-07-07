@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     hiddenHeader(headerMainsoapBlack,0);
-    transitionHeader(headerMainsoapBlack, 0.7);
+    transitionHeader(headerMainsoapBlack, 1.5);
     move(leftMainsoapLine,0,0,0);
     transitionHeader(leftMainsoapLine, 0.7);
     move(rightMainsoapLine,0,0,0);
