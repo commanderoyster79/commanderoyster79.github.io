@@ -13,7 +13,6 @@
     overflow: hidden
     margin: 0 auto  
     width: 1400px
-    height: 9100px
     background-color: white
     &_header
         width: 1400px
@@ -21,6 +20,9 @@
         background-image: url(../img/soap/01_HEADER.webp)
 .slideUp
     animation: slideUp 2s
+
+.slideUpSmall
+    animation: slideUpSmall 2s
 .soap
     &_box
         margin: 140px 300px 80px
@@ -28,7 +30,8 @@
         justify-content: space-between
         &_header
           font-size: 36px
-          font-family: 'RobotoCondensed-Light'
+          font-family: Roboto-Thin
+          font-weight: 900
           color: black
           text-transform: uppercase
           &_black
@@ -40,34 +43,37 @@
           +line_art
           background-color: black
           transform: translate3d(-500px,0px,0px)
-          width: 145px
+          width: 110px
         &_right
           +line_art
           background-color: black
           transform: translate3d(500px,0px,0px)
-          width: 145px
+          width: 110px
     &_descr
-        margin-left: 187px
+        margin-left: 186px
         margin-right: 180px
-        font-family: 'RobotoCondensed-Light'
+        font-family: Roboto-Thin
+        font-weight: 900
         font-size: 20px
         &_line
             display: flex
             &_name
-                font-family: 'RobotoCondensed-Light'
+                font-family: Roboto-Thin
+                font-weight: 900
                 white-space: nowrap
                 &_1
-                    margin-left: 24px
+                    margin-left: 26px
                 &_2
                     margin-left: 14px
             &_descr
                 margin-left: 20px
-                font-family: 'RobotoCondensed-Light'
+                font-family: Roboto-Thin
+                font-weight: 900
     &_line_box
         margin-left: 180px
         margin-right: 180px
         margin-top: 80px
-        font-family: 'RobotoCondensed-Light'
+        font-family: Roboto-Thin
         font-size: 25px
         font-weight: 900
         display: flex
@@ -94,17 +100,18 @@
     &_descr
         margin-left: 300px
         margin-right: 180px
-        font-family: 'RobotoCondensed-Light'
+        font-family: Roboto-Thin
+        font-weight: 900
         font-size: 20px
 .moodblock
     &_img
         background-image: url(../img/soap/04_Moodboard.webp)
-        margin-top: 120px
+        margin-top: 80px
         margin-bottom: 80px
         width: 1400px
         height: 788px
     &_box
-        margin-top: 120px
+        margin-top: 80px
         margin-bottom: 80px
         display: flex
         flex-wrap: wrap
@@ -121,14 +128,15 @@
     &_descr
         margin-left: 300px
         margin-right: 180px
-        font-family: 'RobotoCondensed-Light'
+        font-family: Roboto-Thin
+        font-weight: 900
         font-size: 20px
 .craft
     &_paper
         display: flex
         flex-wrap: wrap
         background-image: url(../img/soap/05_Kraft_fon.webp)
-        margin-top: 120px
+        margin-top: 80px
         margin-bottom: 80px
         width: 1400px
         height: 843px
@@ -144,13 +152,14 @@
         display: flex
         flex-direction: column
         align-items: center
-        margin-top: 120px
+        margin-top: 80px
         margin-bottom: 80px
         &_descr
             margin-top: 50px
-            font-family: 'RobotoCondensed-Light'
+            font-family: Roboto-Thin
+            font-weight: 900
             font-size: 20px
-            margin-left: 46px
+            margin-left: 58px
             &_4
                 margin-left: 0px
         &_img
@@ -167,7 +176,7 @@
 .depiction
     &_soap
         width: 1400px
-        margin-top: 120px
+        margin-top: 80px
         margin-bottom: 80px
         &_1
             background-image: url(../img/soap/20_Etiketka.webp)

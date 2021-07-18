@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
                         }
                         else if (i == 8) {
                             allClose(craftPaperBlock[6]);
-                            craftPaperBlockEight.style.backgroundImage = 'url(../../img/soap/06_Raport_white.png)';
+                            
                         }
                         else if (i == 9) {
                             allClose(craftPaperBlock[5]);
@@ -47,7 +47,10 @@ window.addEventListener('DOMContentLoaded', () => {
             }, 5000);
             setTimeout(() => {
                 craftPaperBlockEight.style.backgroundImage = 'url(../../img/soap/07_Raport_brown.png)';
-            }, 3000);
+            }, 2000);
+            setTimeout(() => {
+                craftPaperBlockEight.style.backgroundImage = 'url(../../img/soap/06_Raport_white.png)';
+            }, 4000);
             for (let i = 0; i <= craftPaperBlock.length - 1; i++) {
                 setTimeout(function () {
                     if (i == 5) {
@@ -128,19 +131,19 @@ window.addEventListener('DOMContentLoaded', () => {
 
         if (scroll <= 1300) {
             logosoapDescr.style.opacity = '0';
-            logosoapDescr.classList.remove('slideUp');
+            logosoapDescr.classList.remove('slideUpSmall');
             transitionHeader(descr, 0.5);
         } else {
-            logosoapDescr.classList.add('slideUp');
+            logosoapDescr.classList.add('slideUpSmall');
             logosoapDescr.style.opacity = '1';
         }
 
         if (scroll <= 2400) {
             moodblockDescr.style.opacity = '0';
-            moodblockDescr.classList.remove('slideUp');
+            moodblockDescr.classList.remove('slideUpSmall');
             transitionHeader(descr, 0.5);
         } else {
-            moodblockDescr.classList.add('slideUp');
+            moodblockDescr.classList.add('slideUpSmall');
             moodblockDescr.style.opacity = '1';
         }
         console.log(scroll);
