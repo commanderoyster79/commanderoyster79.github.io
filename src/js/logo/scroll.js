@@ -99,7 +99,5 @@ window.addEventListener('DOMContentLoaded', () => {
         move (all,0,-scroll+14000,0);
     }
     
-
-    console.log(scroll);
     });
 });

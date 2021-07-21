@@ -1,0 +1,94 @@
+.navigation
+  &_wrapper
+    &:hover
+      .navigation_right_beauty
+        //background-image: url('../icons/beauty/RIGHT_packs.svg')
+      .navigation_left_beauty
+        //background-image: url('../icons/beauty/LEFT_packs.svg')
+      .navigation_top_beauty
+        //background-image: url('../icons/beauty/UP_packs.svg')
+
+.mainbeauty
+    display: block
+    position: relative
+    overflow: hidden
+    margin: 0 auto  
+    width: 1400px
+    height: 12000px
+    background-color: rgb(247,247,247)
+    &_header
+        width: 1400px
+        height: 657px
+        background-image: url(../img/beauty/02_Header_fon.webp)
+
+.beauty
+    &_box
+        margin: 140px 300px 80px
+        display: flex
+        justify-content: space-between
+        &_header
+          font-size: 36px
+          font-family: RobotoCondensed-Light
+          color: black
+          text-transform: uppercase
+          &_black
+            position: absolute
+            width: 260px
+            height: 50px
+            background-color: rgb(247,247,247)
+        &_left
+          +line_art
+          background-color: black
+          transform: translate3d(-500px,0px,0px)
+          width: 250px
+        &_right
+          +line_art
+          background-color: black
+          transform: translate3d(500px,0px,0px)
+          width: 250px
+    &_descr
+        margin-left: 186px
+        margin-right: 180px
+        font-family: Roboto-Thin
+        font-weight: 900
+        font-size: 20px
+        &_line
+            display: flex
+            &_name
+                font-family: Roboto-Thin
+                font-weight: 900
+                white-space: nowrap
+                &_1
+                    margin-left: 26px
+                &_2
+                    margin-left: 14px
+            &_descr
+                margin-left: 20px
+                font-family: Roboto-Thin
+                font-weight: 900
+    &_line_box
+        margin-left: 180px
+        margin-right: 180px
+        margin-top: 80px
+        font-family: Roboto-Thin
+        font-size: 25px
+        font-weight: 900
+        display: flex
+        justify-content: center
+        align-items: center
+        &_name
+            width: 243px
+            height: 136px
+            background-image: url(../img/beauty/03_Queisser_LOGO.webp)
+        &_product
+            width: 166px
+            height: 137px
+            margin-left: 50px
+            background-image: url(../img/beauty/04_Doppel_LOGO.webp)
+        &_year
+            font-weight: 100
+            margin-left: 50px
+            text-transform: uppercase
+            border-top: 2px solid #000
+            border-bottom: 2px solid #000
+            color: #000

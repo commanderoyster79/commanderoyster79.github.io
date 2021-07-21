@@ -9,8 +9,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const craftPaperBlockEight = document.querySelector('.craft_paper_block_8');
 
 
-    console.log(craftPaperBlock);
-
 
 
         
@@ -19,6 +17,36 @@ window.addEventListener('DOMContentLoaded', () => {
     
 
 
+    
+
+    
+
+
+            
+
+    
+    function allClose(atribute) {
+        atribute.style.opacity = '0';
+    }
+
+    function allOpen(atribute) {
+        atribute.style.opacity = '1';
+    }
+
+    function move (atribute,valueX,valueY,valueZ) {
+        atribute.style.transform = `translate3d(${valueX}px,${valueY}px,${valueZ}px)`;
+    }
+
+    function hiddenHeader (atribute,height) {
+        atribute.style.height = `${height}px`;
+    }
+
+    function transitionHeader (atribute,time) {
+        atribute.style.transition = `${time}s all`;
+    }
+
+
+    
     function swapCraftBlock() {
         setTimeout(function run() {
             setTimeout(() => {
@@ -76,45 +104,8 @@ window.addEventListener('DOMContentLoaded', () => {
         },7000);
     }
 
-    
 
 
-            
-
-    
-    function allClose(atribute) {
-        atribute.style.opacity = '0';
-    }
-
-    function allOpen(atribute) {
-        atribute.style.opacity = '1';
-    }
-
-    function move (atribute,valueX,valueY,valueZ) {
-        atribute.style.transform = `translate3d(${valueX}px,${valueY}px,${valueZ}px)`;
-    }
-
-    function hiddenHeader (atribute,height) {
-        atribute.style.height = `${height}px`;
-    }
-
-    function transitionHeader (atribute,time) {
-        atribute.style.transition = `${time}s all`;
-    }
-
-
-    
-
-
-
-
-
-
-
-
-
-
-    
 
 
     window.addEventListener('scroll', function() {
@@ -146,7 +137,6 @@ window.addEventListener('DOMContentLoaded', () => {
             moodblockDescr.classList.add('slideUpSmall');
             moodblockDescr.style.opacity = '1';
         }
-        console.log(scroll);
         
     }); 
     
