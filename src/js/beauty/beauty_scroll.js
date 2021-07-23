@@ -77,17 +77,45 @@ window.addEventListener('DOMContentLoaded', () => {
             
                 imgOrangeBox.item(0).childNodes[1].classList.add('widthOpen');
                 imgOrangeBox.item(0).childNodes[1].style.opacity = '1';
-                transitionHeader(imgOrangeBox.item(0).childNodes[1], 0.5);
+                transitionHeader(imgOrangeBox.item(0).childNodes[1], 1.5);
                 
                 
                 imgOrangeBox.item(0).childNodes[3].style.opacity = '1';
-                transitionHeader(imgOrangeBox.item(0).childNodes[3], 0.5);
+                transitionHeader(imgOrangeBox.item(0).childNodes[3], 1.5);
 
                 imgOrangeBox.item(0).childNodes[5].classList.add('widthOpen');
                 imgOrangeBox.item(0).childNodes[5].style.opacity = '1';
-                transitionHeader(imgOrangeBox.item(0).childNodes[1], 0.5);
+                transitionHeader(imgOrangeBox.item(0).childNodes[1], 1.5);
                 
-            }    
+        }
+        
+        
+        if (scroll <= 1700) {
+            imgPurpleBox.item(0).childNodes[1].classList.remove('widthOpenBig');
+            imgPurpleBox.item(0).childNodes[1].style.opacity = '0';    
+            
+            
+            imgPurpleBox.item(0).childNodes[3].style.opacity = '0';
+
+
+            imgPurpleBox.item(0).childNodes[5].classList.remove('widthOpenBig');
+            imgPurpleBox.item(0).childNodes[5].style.opacity = '0';
+                
+        } else {
+        
+            imgPurpleBox.item(0).childNodes[1].classList.add('widthOpenBig');
+            imgPurpleBox.item(0).childNodes[1].style.opacity = '1';
+            transitionHeader(imgPurpleBox.item(0).childNodes[1], 1.5);
+            
+            
+            imgPurpleBox.item(0).childNodes[3].style.opacity = '1';
+            transitionHeader(imgPurpleBox.item(0).childNodes[3], 1.5);
+
+            imgPurpleBox.item(0).childNodes[5].classList.add('widthOpenBig');
+            imgPurpleBox.item(0).childNodes[5].style.opacity = '1';
+            transitionHeader(imgPurpleBox.item(0).childNodes[1], 1.5);
+            
+        }
 
         console.log(scroll);
 
