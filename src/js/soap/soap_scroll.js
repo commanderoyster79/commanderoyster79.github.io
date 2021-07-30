@@ -122,19 +122,19 @@ window.addEventListener('DOMContentLoaded', () => {
 
         if (scroll <= 1300) {
             logosoapDescr.style.opacity = '0';
-            logosoapDescr.classList.remove('slideUpSmall');
+            logosoapDescr.classList.remove('slideUpBig');
             transitionHeader(descr, 0.5);
         } else {
-            logosoapDescr.classList.add('slideUpSmall');
+            logosoapDescr.classList.add('slideUpBig');
             logosoapDescr.style.opacity = '1';
         }
 
         if (scroll <= 2400) {
             moodblockDescr.style.opacity = '0';
-            moodblockDescr.classList.remove('slideUpSmall');
+            moodblockDescr.classList.remove('slideUpBig');
             transitionHeader(descr, 0.5);
         } else {
-            moodblockDescr.classList.add('slideUpSmall');
+            moodblockDescr.classList.add('slideUpBig');
             moodblockDescr.style.opacity = '1';
         }
         

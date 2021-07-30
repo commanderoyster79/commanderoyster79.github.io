@@ -7,20 +7,14 @@ window.addEventListener('DOMContentLoaded', () => {
     const imgVioletBox = document.querySelectorAll('.img_violet_box');
     const imgBlueBox = document.querySelectorAll('.img_blue_box');
     const imgGreenBox = document.querySelectorAll('.img_green_box');
+    const mainbeautyHeaderLogo = document.querySelector('.mainbeauty_header_logo');
     const descr = document.querySelector('.descr');
+
+    const positionOne = 1;
+    const positionTwo = 3;
+    const positionThree = 5;
     
-
-    console.log(imgOrangeBox.item(0).childNodes[1]);
-    // console.log(imgPurpleBox);
-    // console.log(imgVioletBox);
-    // console.log(imgBlueBox);
-    // console.log(imgGreenBox);
-    
-
-
-
-
-        
+       
         
 
     
@@ -42,7 +36,32 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    function closeAll (atribute,positionOne,positionTwo,positionThree,addClass) {
+        atribute.item(0).childNodes[positionOne].classList.remove(addClass);
+        atribute.item(0).childNodes[positionOne].style.opacity = '0';
 
+        atribute.item(0).childNodes[positionTwo].style.opacity = '0';
+
+        atribute.item(0).childNodes[positionThree].classList.remove(addClass);
+        atribute.item(0).childNodes[positionThree].style.opacity = '0';
+    }
+
+    function openAll (atribute,positionOne,positionTwo,positionThree,addClass) {
+        atribute.item(0).childNodes[positionOne].classList.add(addClass);
+        atribute.item(0).childNodes[positionOne].style.opacity = '1';
+        transitionHeader(atribute.item(0).childNodes[positionOne], 1.5);
+
+        atribute.item(0).childNodes[positionTwo].style.opacity = '1';
+        transitionHeader(atribute.item(0).childNodes[positionTwo], 1.5);
+
+        atribute.item(0).childNodes[positionThree].classList.add(addClass);
+        atribute.item(0).childNodes[positionThree].style.opacity = '1';
+        transitionHeader(atribute.item(0).childNodes[positionThree], 1.5);
+    }
+
+
+
+    
     
 
 
@@ -54,67 +73,45 @@ window.addEventListener('DOMContentLoaded', () => {
                  document.body.scrollTop || 0;
         if (scroll <= 100) {
             descr.style.opacity = '0';
-            descr.classList.remove('slideUp');
+            descr.classList.remove('slideUpSmall');
             transitionHeader(descr, 0.5);
         } else {
-            descr.classList.add('slideUp');
+            descr.classList.add('slideUpSmall');
             descr.style.opacity = '1';
         }
 
 
         if (scroll <= 1100) {
-                imgOrangeBox.item(0).childNodes[1].classList.remove('widthOpen');
-                imgOrangeBox.item(0).childNodes[1].style.opacity = '0';    
-                
-                
-                imgOrangeBox.item(0).childNodes[3].style.opacity = '0';
-
-
-                imgOrangeBox.item(0).childNodes[5].classList.remove('widthOpen');
-                imgOrangeBox.item(0).childNodes[5].style.opacity = '0';
-                    
+            closeAll(imgOrangeBox,positionOne,positionTwo,positionThree,'widthOpen');
         } else {
-            
-                imgOrangeBox.item(0).childNodes[1].classList.add('widthOpen');
-                imgOrangeBox.item(0).childNodes[1].style.opacity = '1';
-                transitionHeader(imgOrangeBox.item(0).childNodes[1], 1.5);
-                
-                
-                imgOrangeBox.item(0).childNodes[3].style.opacity = '1';
-                transitionHeader(imgOrangeBox.item(0).childNodes[3], 1.5);
-
-                imgOrangeBox.item(0).childNodes[5].classList.add('widthOpen');
-                imgOrangeBox.item(0).childNodes[5].style.opacity = '1';
-                transitionHeader(imgOrangeBox.item(0).childNodes[1], 1.5);
-                
+            openAll(imgOrangeBox,positionOne,positionTwo,positionThree,'widthOpen');
         }
         
         
         if (scroll <= 1700) {
-            imgPurpleBox.item(0).childNodes[1].classList.remove('widthOpenBig');
-            imgPurpleBox.item(0).childNodes[1].style.opacity = '0';    
-            
-            
-            imgPurpleBox.item(0).childNodes[3].style.opacity = '0';
-
-
-            imgPurpleBox.item(0).childNodes[5].classList.remove('widthOpenBig');
-            imgPurpleBox.item(0).childNodes[5].style.opacity = '0';
-                
+            closeAll(imgPurpleBox,positionOne,positionTwo,positionThree,'widthOpenBig');
         } else {
-        
-            imgPurpleBox.item(0).childNodes[1].classList.add('widthOpenBig');
-            imgPurpleBox.item(0).childNodes[1].style.opacity = '1';
-            transitionHeader(imgPurpleBox.item(0).childNodes[1], 1.5);
-            
-            
-            imgPurpleBox.item(0).childNodes[3].style.opacity = '1';
-            transitionHeader(imgPurpleBox.item(0).childNodes[3], 1.5);
+            openAll(imgPurpleBox,positionOne,positionTwo,positionThree,'widthOpenBig');
+        }
 
-            imgPurpleBox.item(0).childNodes[5].classList.add('widthOpenBig');
-            imgPurpleBox.item(0).childNodes[5].style.opacity = '1';
-            transitionHeader(imgPurpleBox.item(0).childNodes[1], 1.5);
-            
+
+        if (scroll <= 2300) {
+            closeAll(imgVioletBox,positionOne,positionTwo,positionThree,'widthOpen');
+        } else {
+            openAll(imgVioletBox,positionOne,positionTwo,positionThree,'widthOpen');
+        }
+
+        if (scroll <= 3100) {
+            closeAll(imgBlueBox,positionOne,positionTwo,positionThree,'widthOpen');
+        } else {
+            openAll(imgBlueBox,positionOne,positionTwo,positionThree,'widthOpen');
+        }
+
+
+        if (scroll <= 3800) {
+            closeAll(imgGreenBox,positionOne,positionTwo,positionThree,'widthOpen');
+        } else {
+            openAll(imgGreenBox,positionOne,positionTwo,positionThree,'widthOpen');
         }
 
         console.log(scroll);
@@ -129,4 +126,6 @@ window.addEventListener('DOMContentLoaded', () => {
     move(rightMainbeautyLine,0,0,0);
     transitionHeader(rightMainbeautyLine, 0.7);
     descr.style.opacity = '0';
+    mainbeautyHeaderLogo.classList.add('slideUpLogoBeauty');
+    transitionHeader(mainbeautyHeaderLogo, 0.5);
 }); 
