@@ -13,6 +13,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const positionOne = 1;
     const positionTwo = 3;
     const positionThree = 5;
+
+    const aboutPackageOrange = document.querySelectorAll('.about_package_orange');
+
+    console.log(aboutPackageOrange.item(0).childNodes);
     
        
         
@@ -27,6 +31,11 @@ window.addEventListener('DOMContentLoaded', () => {
         atribute.style.transform = `translate3d(${valueX}px,${valueY}px,${valueZ}px)`;
     }
 
+    function moveX (atribute,position,valueX,valueY,valueZ,time) {
+        atribute.item(0).childNodes[position].style.transform = `translate3d(${valueX}px,${valueY}px,${valueZ}px)`;
+        atribute.item(0).childNodes[position].style.transition = `${time}s all`;
+    }
+
     function hiddenHeader (atribute,height) {
         atribute.style.height = `${height}px`;
     }
@@ -36,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    function closeAll (atribute,positionOne,positionTwo,positionThree,addClass) {
+    function closeAll (atribute,addClass) {
         atribute.item(0).childNodes[positionOne].classList.remove(addClass);
         atribute.item(0).childNodes[positionOne].style.opacity = '0';
 
@@ -46,7 +55,7 @@ window.addEventListener('DOMContentLoaded', () => {
         atribute.item(0).childNodes[positionThree].style.opacity = '0';
     }
 
-    function openAll (atribute,positionOne,positionTwo,positionThree,addClass) {
+    function openAll (atribute,addClass) {
         atribute.item(0).childNodes[positionOne].classList.add(addClass);
         atribute.item(0).childNodes[positionOne].style.opacity = '1';
         transitionHeader(atribute.item(0).childNodes[positionOne], 1.5);
@@ -82,36 +91,47 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
         if (scroll <= 1100) {
-            closeAll(imgOrangeBox,positionOne,positionTwo,positionThree,'widthOpen');
+            closeAll(imgOrangeBox,'widthOpen');
         } else {
-            openAll(imgOrangeBox,positionOne,positionTwo,positionThree,'widthOpen');
+            openAll(imgOrangeBox,'widthOpen');
         }
         
         
         if (scroll <= 1700) {
-            closeAll(imgPurpleBox,positionOne,positionTwo,positionThree,'widthOpenBig');
+            closeAll(imgPurpleBox,'widthOpenBig');
         } else {
-            openAll(imgPurpleBox,positionOne,positionTwo,positionThree,'widthOpenBig');
+            openAll(imgPurpleBox,'widthOpenBig');
         }
 
 
         if (scroll <= 2300) {
-            closeAll(imgVioletBox,positionOne,positionTwo,positionThree,'widthOpen');
+            closeAll(imgVioletBox,'widthOpen');
         } else {
-            openAll(imgVioletBox,positionOne,positionTwo,positionThree,'widthOpen');
+            openAll(imgVioletBox,'widthOpen');
         }
 
         if (scroll <= 3100) {
-            closeAll(imgBlueBox,positionOne,positionTwo,positionThree,'widthOpen');
+            closeAll(imgBlueBox,'widthOpen');
         } else {
-            openAll(imgBlueBox,positionOne,positionTwo,positionThree,'widthOpen');
+            openAll(imgBlueBox,'widthOpen');
         }
 
 
         if (scroll <= 3800) {
-            closeAll(imgGreenBox,positionOne,positionTwo,positionThree,'widthOpen');
+            closeAll(imgGreenBox,'widthOpen');
         } else {
-            openAll(imgGreenBox,positionOne,positionTwo,positionThree,'widthOpen');
+            openAll(imgGreenBox,'widthOpen');
+        }
+
+
+        if (scroll <= 5700) {
+            moveX(aboutPackageOrange,positionOne,-130,0,0);
+            moveX(aboutPackageOrange,positionTwo,100,0,0);
+            moveX(aboutPackageOrange,positionThree,100,0,0);
+        } else {
+            moveX(aboutPackageOrange,positionOne,0,0,0,1.5);
+            moveX(aboutPackageOrange,positionTwo,0,0,0,1.5);
+            moveX(aboutPackageOrange,positionThree,0,0,0,1.5);
         }
 
         console.log(scroll);
