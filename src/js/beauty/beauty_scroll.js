@@ -15,8 +15,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const positionThree = 5;
 
     const aboutPackageOrange = document.querySelectorAll('.about_package_orange');
+    const aboutPackagePurple = document.querySelectorAll('.about_package_purple');
+    const aboutPackageViolet = document.querySelectorAll('.about_package_violet');
+    const aboutPackageBlue = document.querySelectorAll('.about_package_blue');
+    const aboutPackageGreen = document.querySelectorAll('.about_package_green');
 
-    console.log(aboutPackageOrange.item(0).childNodes);
+    
     
        
         
@@ -125,16 +129,59 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
         if (scroll <= 5700) {
-            moveX(aboutPackageOrange,positionOne,-130,0,0);
+            moveX(aboutPackageOrange,positionOne,-190,0,0);
             moveX(aboutPackageOrange,positionTwo,100,0,0);
-            moveX(aboutPackageOrange,positionThree,100,0,0);
+            moveX(aboutPackageOrange,positionThree,250,0,0);
         } else {
-            moveX(aboutPackageOrange,positionOne,0,0,0,1.5);
-            moveX(aboutPackageOrange,positionTwo,0,0,0,1.5);
-            moveX(aboutPackageOrange,positionThree,0,0,0,1.5);
+            moveX(aboutPackageOrange,positionOne,0,0,0,1);
+            moveX(aboutPackageOrange,positionTwo,0,0,0,2);
+            moveX(aboutPackageOrange,positionThree,0,0,0,2.5);
+        }
+
+        if (scroll <= 6500) {
+            moveX(aboutPackagePurple,positionOne,-190,0,0);
+            moveX(aboutPackagePurple,positionTwo,100,0,0);
+            moveX(aboutPackagePurple,positionThree,250,0,0);
+        } else {
+            moveX(aboutPackagePurple,positionOne,0,0,0,1);
+            moveX(aboutPackagePurple,positionTwo,0,0,0,2);
+            moveX(aboutPackagePurple,positionThree,0,0,0,2.5);
+        }
+
+        if (scroll <= 7300) {
+            moveX(aboutPackageViolet,positionOne,-190,0,0);
+            moveX(aboutPackageViolet,positionTwo,100,0,0);
+            moveX(aboutPackageViolet,positionThree,250,0,0);
+        } else {
+            moveX(aboutPackageViolet,positionOne,0,0,0,1);
+            moveX(aboutPackageViolet,positionTwo,0,0,0,2);
+            moveX(aboutPackageViolet,positionThree,0,0,0,2.5);
+        }
+
+        if (scroll <= 8000) {
+            moveX(aboutPackageBlue,positionOne,-190,0,0);
+            moveX(aboutPackageBlue,positionTwo,100,0,0);
+            moveX(aboutPackageBlue,positionThree,250,0,0);
+        } else {
+            moveX(aboutPackageBlue,positionOne,0,0,0,1);
+            moveX(aboutPackageBlue,positionTwo,0,0,0,2);
+            moveX(aboutPackageBlue,positionThree,0,0,0,2.5);
+        }
+
+        if (scroll <= 8800) {
+            moveX(aboutPackageGreen,positionOne,-190,0,0);
+            moveX(aboutPackageGreen,positionTwo,100,0,0);
+            moveX(aboutPackageGreen,positionThree,250,0,0);
+        } else {
+            moveX(aboutPackageGreen,positionOne,0,0,0,1);
+            moveX(aboutPackageGreen,positionTwo,0,0,0,2);
+            moveX(aboutPackageGreen,positionThree,0,0,0,2.5);
         }
 
         console.log(scroll);
+
+
+        
 
         
     }); 
