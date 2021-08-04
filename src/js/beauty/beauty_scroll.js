@@ -129,9 +129,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
         if (scroll <= 5700) {
-            moveX(aboutPackageOrange,positionOne,-190,0,0);
-            moveX(aboutPackageOrange,positionTwo,100,0,0);
-            moveX(aboutPackageOrange,positionThree,250,0,0);
+            moveX(aboutPackageOrange,positionOne,-570,0,0);
+            moveX(aboutPackageOrange,positionTwo,760,0,0);
+            moveX(aboutPackageOrange,positionThree,680,0,0);
         } else {
             moveX(aboutPackageOrange,positionOne,0,0,0,1);
             moveX(aboutPackageOrange,positionTwo,0,0,0,2);
@@ -139,9 +139,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         if (scroll <= 6500) {
-            moveX(aboutPackagePurple,positionOne,-190,0,0);
-            moveX(aboutPackagePurple,positionTwo,100,0,0);
-            moveX(aboutPackagePurple,positionThree,250,0,0);
+            moveX(aboutPackagePurple,positionOne,-570,0,0);
+            moveX(aboutPackagePurple,positionTwo,760,0,0);
+            moveX(aboutPackagePurple,positionThree,680,0,0);
         } else {
             moveX(aboutPackagePurple,positionOne,0,0,0,1);
             moveX(aboutPackagePurple,positionTwo,0,0,0,2);
@@ -149,9 +149,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         if (scroll <= 7300) {
-            moveX(aboutPackageViolet,positionOne,-190,0,0);
-            moveX(aboutPackageViolet,positionTwo,100,0,0);
-            moveX(aboutPackageViolet,positionThree,250,0,0);
+            moveX(aboutPackageViolet,positionOne,-630,0,0);
+            moveX(aboutPackageViolet,positionTwo,760,0,0);
+            moveX(aboutPackageViolet,positionThree,680,0,0);
         } else {
             moveX(aboutPackageViolet,positionOne,0,0,0,1);
             moveX(aboutPackageViolet,positionTwo,0,0,0,2);
@@ -159,9 +159,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         if (scroll <= 8000) {
-            moveX(aboutPackageBlue,positionOne,-190,0,0);
-            moveX(aboutPackageBlue,positionTwo,100,0,0);
-            moveX(aboutPackageBlue,positionThree,250,0,0);
+            moveX(aboutPackageBlue,positionOne,-570,0,0);
+            moveX(aboutPackageBlue,positionTwo,760,0,0);
+            moveX(aboutPackageBlue,positionThree,680,0,0);
         } else {
             moveX(aboutPackageBlue,positionOne,0,0,0,1);
             moveX(aboutPackageBlue,positionTwo,0,0,0,2);
@@ -169,9 +169,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         if (scroll <= 8800) {
-            moveX(aboutPackageGreen,positionOne,-190,0,0);
-            moveX(aboutPackageGreen,positionTwo,100,0,0);
-            moveX(aboutPackageGreen,positionThree,250,0,0);
+            moveX(aboutPackageGreen,positionOne,-630,0,0);
+            moveX(aboutPackageGreen,positionTwo,760,0,0);
+            moveX(aboutPackageGreen,positionThree,680,0,0);
         } else {
             moveX(aboutPackageGreen,positionOne,0,0,0,1);
             moveX(aboutPackageGreen,positionTwo,0,0,0,2);

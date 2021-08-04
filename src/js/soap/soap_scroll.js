@@ -120,23 +120,23 @@ window.addEventListener('DOMContentLoaded', () => {
             descr.style.opacity = '1';
         }
 
-        if (scroll <= 1300) {
-            logosoapDescr.style.opacity = '0';
-            logosoapDescr.classList.remove('slideUpBig');
-            transitionHeader(descr, 0.5);
-        } else {
-            logosoapDescr.classList.add('slideUpBig');
-            logosoapDescr.style.opacity = '1';
-        }
+        // if (scroll <= 1300) {
+        //     logosoapDescr.style.opacity = '0';
+        //     logosoapDescr.classList.remove('slideUpBig');
+        //     transitionHeader(descr, 0.5);
+        // } else {
+        //     logosoapDescr.classList.add('slideUpBig');
+        //     logosoapDescr.style.opacity = '1';
+        // }
 
-        if (scroll <= 2400) {
-            moodblockDescr.style.opacity = '0';
-            moodblockDescr.classList.remove('slideUpBig');
-            transitionHeader(descr, 0.5);
-        } else {
-            moodblockDescr.classList.add('slideUpBig');
-            moodblockDescr.style.opacity = '1';
-        }
+        // if (scroll <= 2400) {
+        //     moodblockDescr.style.opacity = '0';
+        //     moodblockDescr.classList.remove('slideUpBig');
+        //     transitionHeader(descr, 0.5);
+        // } else {
+        //     moodblockDescr.classList.add('slideUpBig');
+        //     moodblockDescr.style.opacity = '1';
+        // }
         
     }); 
     
@@ -149,6 +149,6 @@ window.addEventListener('DOMContentLoaded', () => {
     move(rightMainsoapLine,0,0,0);
     transitionHeader(rightMainsoapLine, 0.7);
     descr.style.opacity = '0';
-    logosoapDescr.style.opacity = '0';
-    moodblockDescr.style.opacity = '0';
+    // logosoapDescr.style.opacity = '0';
+    // moodblockDescr.style.opacity = '0';
 }); 
