@@ -1,3 +1,4 @@
+'use strict';
 window.addEventListener('DOMContentLoaded', () => {
     const leftMainbeautyLine = document.querySelector('.beauty_box_left');
     const rightMainbeautyLine = document.querySelector('.beauty_box_right');
@@ -176,14 +177,7 @@ window.addEventListener('DOMContentLoaded', () => {
             moveX(aboutPackageGreen,positionOne,0,0,0,1);
             moveX(aboutPackageGreen,positionTwo,0,0,0,2);
             moveX(aboutPackageGreen,positionThree,0,0,0,2.5);
-        }
-
-        console.log(scroll);
-
-
-        
-
-        
+        }       
     }); 
     
     hiddenHeader(headerMainbeautyBlack,0);
