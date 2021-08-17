@@ -54,6 +54,8 @@
         color: white
         &_line
             display: flex
+            &_1
+                margin-top: 30px
             &_name
                 font-family: Roboto-Thin
                 font-weight: 900
@@ -102,7 +104,7 @@
     display: flex
     &_img
         width: 552px
-        height: 845px
+        height: 825px
         margin-left: 50px
         background-image: url(../img/dry/05_SUKHOI_phone.webp)
     &_welcome
@@ -153,3 +155,55 @@
                     background-image: url(../img/dry/09_SUKHOI_card-ikon.webp)
                     width: 106px
                     height: 75px
+.card
+    &_box
+        position: relative
+        height: 910px
+        &_img
+            position: absolute
+            width: 514px
+            height: 531px
+            background-image: url(../img/dry/10_SUKHOI_card.webp)
+            z-index: 3
+            top: 310px
+            left: 40px
+        &_about
+            position: absolute
+            width: 908px
+            height: 712px
+            background-image: url(../img/dry/11_SUKHOI_priglos.webp)
+            left: 210px
+            top: 110px
+            z-index: 2
+        &_convert
+            position: absolute
+            width: 925px
+            height: 862px
+            background-image: url(../img/dry/12_SUKHOI_konvert.webp)
+            right: -70px
+            z-index: 1
+.history
+    display: flex
+    flex-direction: column
+    padding-left: 186px
+    padding-right: 180px
+    &_header
+        font-family: RobotoCondensed-Light
+        text-transform: uppercase
+        font-size: 46px
+        color: white
+    &_line
+        width: 100%
+        height: 2px
+        background-color: white
+        margin-top: 15px
+    &_descr
+        font-family: Roboto-Thin
+        color: white
+        font-weight: 900
+        margin-top: 30px
+        font-size: 20px
+.gif
+    width: 1400px
+    height: 788px
+    background-image: url(../img/dry/13_SUKHOI_samoleti.gif)
