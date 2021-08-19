@@ -115,7 +115,7 @@
         &_header
             font-family: RobotoCondensed-Light
             text-transform: uppercase
-            font-size: 46px
+            font-size: 36px
             color: white
         &_line
             width: 100%
@@ -190,7 +190,7 @@
     &_header
         font-family: RobotoCondensed-Light
         text-transform: uppercase
-        font-size: 46px
+        font-size: 36px
         color: white
     &_line
         width: 100%
@@ -207,3 +207,27 @@
     width: 1400px
     height: 788px
     background-image: url(../img/dry/13_SUKHOI_samoleti.gif)
+
+.airplane
+    display: flex
+    padding-left: 78px
+    padding-right: 78px
+    &_box
+        display: flex
+        flex-direction: column
+        align-items: center
+        &:hover
+            .airplane_box_img
+                background-image: url(../icons/dry/01_Su-2-02.svg) 
+        &_img
+            background-image: url(../icons/dry/01_Su-2-01.svg)
+            width: 199px 
+            height: 145.5px
+            transition: background-image 0.5s 
+        &_descr
+            font-family: Roboto-Thin
+            color: white
+            font-weight: 900
+            margin-top: 10px
+            font-size: 20px
+        
