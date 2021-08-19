@@ -39,12 +39,12 @@
           +line_art
           background-color: white
           transform: translate3d(-500px,0px,0px)
-          width: 230px
+          width: 240px
         &_right
           +line_art
           background-color: white
           transform: translate3d(500px,0px,0px)
-          width: 230px
+          width: 240px
     &_descr
         margin-left: 186px
         margin-right: 180px
@@ -210,20 +210,111 @@
 
 .airplane
     display: flex
+    align-items: center
+    flex-wrap: wrap
     padding-left: 78px
     padding-right: 78px
+    margin-top: 60px
+    &_line
+        display: flex
+        margin-bottom: 30px
     &_box
         display: flex
         flex-direction: column
         align-items: center
+        margin-left: 15px
         &:hover
             .airplane_box_img
-                background-image: url(../icons/dry/01_Su-2-02.svg) 
+                background-image: url(../icons/dry/01_Su-2-02.svg)
+        &_su-3
+            margin-top: 5px
+            &:hover
+                .airplane_box_img_su-3
+                    background-image: url(../icons/dry/02_Su-3-02.svg)
+        &_su-5
+            &:hover
+                .airplane_box_img_su-5
+                    background-image: url(../icons/dry/03_Su-5-02.svg)
+        &_su-6
+            &:hover
+                .airplane_box_img_su-6
+                    background-image: url(../icons/dry/04_Su-6-02.svg)
+        &_su-7
+            &:hover
+                .airplane_box_img_su-7
+                    background-image: url(../icons/dry/05_Su-7-02.svg)
+        &_su-8
+            &:hover
+                .airplane_box_img_su-8
+                    background-image: url(../icons/dry/06_Su-8-02.svg)
+        &_utb-2
+            &:hover
+                .airplane_box_img_utb-2
+                    background-image: url(../icons/dry/07_UTB-2-02.svg)
+        &_su-9
+            margin-top: 15px
+            &:hover
+                .airplane_box_img_su-9
+                    background-image: url(../icons/dry/08_Su-9-02.svg)
+        &_su-10
+            margin-top: -45px
+            &:hover
+                .airplane_box_img_su-10
+                    background-image: url(../icons/dry/09_Su-10-02.svg)
+        &_su-11
+            margin-top: 15px
+            &:hover
+                .airplane_box_img_su-11
+                    background-image: url(../icons/dry/10_Su-11-02.svg)
+        &_su-12
+            &:hover
+                .airplane_box_img_su-12
+                    background-image: url(../icons/dry/11_Su-12-02.svg)
         &_img
             background-image: url(../icons/dry/01_Su-2-01.svg)
             width: 199px 
-            height: 145.5px
-            transition: background-image 0.5s 
+            height: 145px
+            transition: background-image 0.5s
+            &_su-3
+                background-image: url(../icons/dry/02_Su-3-01.svg)
+                width: 152px 
+                height: 119px
+            &_su-5
+                background-image: url(../icons/dry/03_Su-5-01.svg)
+                width: 152px 
+                height: 119px
+            &_su-6
+                background-image: url(../icons/dry/04_Su-6-01.svg)
+                width: 184px 
+                height: 127px
+            &_su-7
+                background-image: url(../icons/dry/05_Su-7-01.svg)
+                width: 202px 
+                height: 145px
+            &_su-8
+                background-image: url(../icons/dry/06_Su-8-01.svg)
+                width: 290px 
+                height: 197px
+            &_utb-2
+                background-image: url(../icons/dry/07_UTB-2-01.svg)
+                width: 290px 
+                height: 216px 
+            &_su-9
+                background-image: url(../icons/dry/08_Su-9-01.svg)
+                width: 157px 
+                height: 137px
+            &_su-10
+                background-image: url(../icons/dry/09_Su-10-01.svg)
+                width: 296px 
+                height: 271px
+            &_su-11
+                background-image: url(../icons/dry/10_Su-11-01.svg)
+                width: 157px 
+                height: 137px
+            &_su-12
+                background-image: url(../icons/dry/11_Su-12-01.svg)
+                width: 296px 
+                height: 182px      
         &_descr
             font-family: Roboto-Thin
             color: white
