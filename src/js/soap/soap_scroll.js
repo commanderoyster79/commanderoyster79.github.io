@@ -12,12 +12,20 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
         
-        
+    let nums = [1,0,2,3,0,4,5,0];    
 
+    let findNumbers = (nums) => {
+        for (let i = 0; i < nums.length; i++) {
+            if (nums[i] === 0) {
+                nums.splice(nums.indexOf(nums[i++]),0,0);
+                nums.pop();
+            }
+            
+        }
+        return nums;
+    };
     
-
-
-    
+    console.log(findNumbers(nums));
 
     
 
