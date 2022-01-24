@@ -12,23 +12,27 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
         
-    let nums = [1,0,2,3,0,4,5,0];    
+    let nums = [4,3,2,7,8,2,3,1];
 
-    let findNumbers = (nums) => {
+    let findDisappearedNumbers = function(nums) {
+        let set = new Set();
+
         for (let i = 0; i < nums.length; i++) {
-            if (nums[i] === 0) {
-                nums.splice(nums.indexOf(nums[i++]),0,0);
-                nums.pop();
-            }
-            
+            set.add(i+1);
         }
-        return nums;
+        
+        for (let num of nums) {
+            set.delete(num);
+        }
+
+        return [...set];
+       
     };
     
-    console.log(findNumbers(nums));
+    console.log(findDisappearedNumbers(nums));
 
     
-
+    
 
             
 
